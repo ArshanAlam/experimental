@@ -1,0 +1,13 @@
+{% extends 'polls/base.html' %}
+{% block title %}Results for Question {{ question.id }}{% endblock %}
+{% block content %}
+  <h1>{{ question.id }} : {{ question.question_text }}</h1>
+  <h4>{{ question.pub_date }}</h4>
+  {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+  <ul>
+    {% for c in question.choice_set.all %}
+      <li>{{ c.choice_text }} -- {{ c.votes }} vote{{ c.votes|pluralize }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
