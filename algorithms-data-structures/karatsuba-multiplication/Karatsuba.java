@@ -17,7 +17,7 @@ class Karatsuba {
    * are very useful for getting started.
    */
   public static String multiply(String s1, String s2) {
-    if ((s1.length() <= 1) || (s2.length() <= 1)) {
+    if ((s1.length() <= 2) && (s2.length() <= 2)) {
       return String.valueOf(Integer.valueOf(s1) * Integer.valueOf(s2));
     }
     
