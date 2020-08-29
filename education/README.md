@@ -4,7 +4,7 @@ This is a set of useful informations that I've learned and I've created this REA
 ---
 
 
-It's quite common to get stuck on a problem--often because you have initial ideas about what the solution should be that block your ability to see the real solution. What is a good next best step to take when you've already spent time reanalyzing the problem by focusing intently, and you find that you are simply stuck?
+### It's quite common to get stuck on a problem--often because you have initial ideas about what the solution should be that block your ability to see the real solution. What is a good next best step to take when you've already spent time reanalyzing the problem by focusing intently, and you find that you are simply stuck?
 <details>
 Take a little break. You can focus on something different, or even just relax and not focus on anything at all, perhaps going out for a walk. 
 
@@ -12,8 +12,7 @@ Take a little break. You can focus on something different, or even just relax an
 Taking a little break is a good idea. Taking your attention off of what you want to solve helps allow other neural modes to have access to the material. You won't be conscious of your brain continuing to work in the background on the problem--but it is!
 </details>
 
-
-After you have become an expert at using the "Pomodoro technique," you should:
+### After you have become an expert at using the "Pomodoro technique," you should:
 <details>
 Continue to use the "Pomodoro technique" when you have difficulty learning a subject or getting yourself motivated to get started on the task, but make sure to also take breaks in between your Pomodoro sessions. 
 
@@ -22,7 +21,7 @@ The Pomodoro technique is a time-management, time-boxing technique in which the 
 </details>
 
 
-In the ___ mode, the brain makes random connections in a relaxed fashion.
+### In the ___ mode, the brain makes random connections in a relaxed fashion.
 <details>
 diffuse
 
@@ -31,7 +30,7 @@ diffuse
 </details>
 
 
-Procrastination
+### Procrastination
 <details>
 When you don't want to work on something, a sense of neural discomfort arises. However, researchers have found that not long after you might start working on something that you find unpleasant, that neural discomfort disappears. So an important aspect of tackling procrastination is to just get yourself through that initial period of discomfort. The Pomodoro technique helps you do that.
 
@@ -43,7 +42,7 @@ Even if you keep right on task by prioritizing and working on the most important
 </details>
 
 
-The focused mode is:
+### The focused mode is:
 <details>
 Ideas, concepts, and problem-solving techniques that are at least somewhat familiar to you--your previous knowledge lays a sort of underlying neural pathway that you tend to follow.
 
@@ -55,7 +54,7 @@ A pinball machine that has bumpers which are very tightly grouped together, so t
 </details>
 
 
-Sleep
+### Sleep
 <details>
 Too little sleep over too long a time is associated with all sorts of nasty conditions, including headaches, depression, heart disease, diabetes, and just plain dying earlier.
 
@@ -64,7 +63,7 @@ During sleep, your brain erases the less important parts of memories and simulta
 </details>
 
 
-Memory
+### Memory
 <details>
 Repetition is needed so your metabolic vampires--natural dissipating processes--don't suck the memories away.
 
@@ -76,7 +75,7 @@ Long term memory is like a storage warehouse.
 </details>
 
 
-Practice
+### Practice
 <details>
 Practice helps make memories more permanent.
 
@@ -85,7 +84,7 @@ Neurons become linked together through repeated use. The more abstract something
 </details>
 
 
-Activities that would be more apt to arouse the diffuse (rather than focused) mode:
+### Activities that would be more apt to arouse the diffuse (rather than focused) mode:
 <details>
 
 * Go for a walk.
@@ -94,7 +93,7 @@ Activities that would be more apt to arouse the diffuse (rather than focused) mo
 </details>
 
 
-Exercise
+### Exercise
 <details>
 Helps improve your ability to learn and remember.
 
@@ -103,7 +102,7 @@ Research is showing that exercise seems to be just as important as an enriched e
 </details>
 
 
-Math and science might sometimes be more challenging because
+### Math and science might sometimes be more challenging because
 <details>
 
 * Math is not so directly related to emotions that we can feel.
@@ -112,7 +111,7 @@ Math and science might sometimes be more challenging because
 </details>
 
 
-The ___ mode involves a direct approach to solving problems using rational, sequential, analytical approaches. It is associated with the concentrating abilities of the brain's prefrontal cortex, located right behind your forehead.
+### The ___ mode involves a direct approach to solving problems using rational, sequential, analytical approaches. It is associated with the concentrating abilities of the brain's prefrontal cortex, located right behind your forehead.
 <details>
 Focused
 
@@ -121,11 +120,11 @@ Focused
 </details>
 
 
-According to Dr. Sejnowski’s, what happens in your brain during sleep that helps you remember new experiences?
+### According to Dr. Sejnowski’s, what happens in your brain during sleep that helps you remember new experiences?
 <details>Your brain forms new synapses</details>
 
 
-True statements about the human brain:
+### True statements about the human brain:
 <details>
 
 * Sleeping helps the brain form new synapses (neural connections).
