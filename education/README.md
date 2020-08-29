@@ -123,10 +123,28 @@ Focused
 
 ## Algorithms
 
-### Definition of `Big O Notation`
+### Definition of Big O Notation
 <details>
 
-Let `T(n)` be a function on `n = 1, 2, 3, ...`. Then `T(n) = O(f(n))` if and only if there exist constant ![c, n_0 > 0][c_n_0] such that `T(n) <= cf(n)`. For all `n >= n_0`.
+Let `T(n)` be a function on `n = 1, 2, 3,...`. Then `T(n) = O(f(n))` if and only if there exist constant `c, n_0 > 0` such that `T(n) <= cf(n)`. For all `n >= n_0`.
+</details>
 
-[c_n_0]: https://render.githubusercontent.com/render/math?math=c, n_0 > 0
+
+### Definition of Big ![Big Omega Symbol][big_omega] Notation
+<details>
+
+Let `T(n)` be a function on `n = 1, 2, 3,...`. Then ![tn_omega_fn][tn_omega_fn] if and only if there exist constant `c, n_0 > 0` such that `T(n) >= cf(n)`. For all `n >= n_0`.
+
+[tn_omega_fn]: https://render.githubusercontent.com/render/math?math=T(n)%20=%20\Omega(f(n))
+[big_omega]: https://render.githubusercontent.com/render/math?math=\Omega
+</details>
+
+
+### Definition of Big ![Big Theta Symbol][big_theta] Notation
+<details>
+
+Let `T(n)` be a function on `n = 1, 2, 3,...`. Then ![tn_theta_fn][tn_theta_fn] if and only if ![tn_omega_fn] and `T(n) = O(f(n))`.
+
+[tn_theta_fn]: https://render.githubusercontent.com/render/math?math=T(n)%20=%20\Theta(f(n))
+[big_theta]: https://render.githubusercontent.com/render/math?math=\Theta
 </details>
