@@ -3,6 +3,7 @@ This is a set of useful informations that I've learned and I've created this REA
 
 ---
 
+## Learning How To Learn
 
 ### It's quite common to get stuck on a problem--often because you have initial ideas about what the solution should be that block your ability to see the real solution. What is a good next best step to take when you've already spent time reanalyzing the problem by focusing intently, and you find that you are simply stuck?
 <details>
@@ -117,4 +118,15 @@ Focused
 
 * Sleeping helps the brain form new synapses (neural connections).
 * Brain connectivity is dynamic (that is, it changes), not static.
+</details>
+
+
+## Algorithms
+
+### Definition of `Big O Notation`
+<details>
+
+Let `T(n)` be a function on `n = 1, 2, 3, ...`. Then `T(n) = O(f(n))` if and only if there exist constant ![c, n_0 > 0][c_n_0] such that `T(n) <= cf(n)`. For all `n >= n_0`.
+
+[c_n_0]: https://render.githubusercontent.com/render/math?math=c, n_0 > 0
 </details>
