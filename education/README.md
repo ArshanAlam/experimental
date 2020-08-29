@@ -39,6 +39,7 @@ diffuse
 
 ### The focused mode is:
 <details>
+
 * Ideas, concepts, and problem-solving techniques that are at least somewhat familiar to you--your previous knowledge lays a sort of underlying neural pathway that you tend to follow.
 * A pinball machine that has bumpers which are very tightly grouped together, so the pinball (the thought) can't go very far without bumping into a bumper.
 
