@@ -16,7 +16,9 @@ class MergeSort {
       nums = stream.map(Integer::parseInt).mapToInt(i -> i).toArray();
     }
     
-    System.out.println("Sorted Array" + Arrays.toString(nums));
+    // sort the array then print it
+    mergeSort(nums);
+    System.out.println("Sorted Array: " + Arrays.toString(nums));
   }
   
   /**
