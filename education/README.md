@@ -325,7 +325,7 @@ private static long countInversions(int[] nums, int left, int right) {
 ### The Master Method
 <details>
 
-The [master method](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) provides an asymptotic analysis (using `Big O Notation`) for recurrence relations of types that occur in the analysis of many deivide and conquer algorithms.
+The [master method](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) provides an asymptotic analysis (using `Big O Notation`) for recurrence relations of types that occur in the analysis of many divide and conquer algorithms.
 
 * Cool Feature: A "black box" for solving recurrences.
 * Assumption: All subproblems have equal size.
