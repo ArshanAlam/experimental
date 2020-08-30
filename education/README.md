@@ -320,3 +320,33 @@ private static long countInversions(int[] nums, int left, int right) {
 
 *Here is the [implementation](../algorithms-data-structures/counting-inversions/CountingInversions.java)*
 </details>
+
+
+### The Master Method
+<details>
+
+The [master method](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)) provides an asymptotic analysis (using `Big O Notation`) for recurrence relations of types that occur in the analysis of many deivide and conquer algorithms.
+
+* Cool Feature: A "black box" for solving recurrences.
+* Assumption: All subproblems have equal size.
+
+#### Recurrence Format
+1. Base Case: `T(n)` <= some constant for all sufficiently small `n`
+2. For all larger `n`: `T(n) <= a * T(n/b) + O(n^d)`
+
+Where
+* `a` = number of recursive calls (`>= 1`)
+* `b` = input size shrinkage factor (`> 1`)
+* `d` = exponent in the running time of the "combine step" (`>= 0`)
+
+*[a, b, d, are **independent** of n]*
+
+#### The Theorem
+`T(n)` is one of:
+
+1. `O(n^d * logn)`                  **if a = b^d (root heavy)**
+2. `O(n^d)`                         **if a < b^d**
+3. `O(n^log_b(a)) = O(a^log_b(n))`  **if a > b^d (leaves heavy)**
+
+*Note: In case 3 the base of the logarithm matters!*
+</details>
