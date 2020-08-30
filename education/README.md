@@ -25,7 +25,7 @@ This is a set of useful informations that I've learned and I've created this REA
 diffuse
 
 
-![Diffuse Mode Octopus](images/diffuse-mode-octopus.png)
+![Diffuse Mode Octopus](images/learning-how-to-learn/diffuse-mode-octopus.png)
 </details>
 
 
@@ -45,7 +45,7 @@ diffuse
 * A pinball machine that has bumpers which are very tightly grouped together, so the pinball (the thought) can't go very far without bumping into a bumper.
 
 
-![Focused Mode Pinball Machine](images/focus-mode.jpg)
+![Focused Mode Pinball Machine](images/learning-how-to-learn/focus-mode.jpg)
 </details>
 
 
@@ -105,7 +105,7 @@ diffuse
 Focused
 
 
-![Focused Mode Prefrontal Cortex](images/focused-mode-prefrontal-cortex.png)
+![Focused Mode Prefrontal Cortex](images/learning-how-to-learn/focused-mode-prefrontal-cortex.png)
 </details>
 
 
@@ -249,4 +249,21 @@ def karatsuba(x, y) {
 ```
 
 *Here is the [implementation](../algorithms-data-structures/merge-sort/MergeSort.java)*
+</details>
+
+### Counting Inversions
+<details>
+
+Counting inversions is a problem of counting the number of pairs of indices `(i, j)` in an array `nums` where `i < j` and `nums[i] > nums[j]`.
+
+* Input: Array `nums` containing the numbers `1, 2, 3,..., n` in some arbitrary order
+* Output: Number of inversions = number of pairs `(i, j)` of array indices with `i < j` and `nums[i] > nums[j]`.
+
+Turns out we could use a [divide and conquer](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm) algorithm similar to merge sort to help us solve this problem.
+
+![Counting Inverions Using Merge Sort](images/algorithms/counting-inversions.png)
+
+* Time Complexity: `O(nlogn)`
+* Space Complexity: `O(n)`
+
 </details>
