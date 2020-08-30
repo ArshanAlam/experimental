@@ -203,4 +203,50 @@ def karatsuba(x, y) {
 * Space Complexity: `O(n)`
 
 
+```
+/**                                                                                                                             
+  * Given the array of integers, sort them in ascending order.                                                                   
+  * @param nums - The list of numbers                                                                                            
+  * @param left - The start index                                                                                                
+  * @param right - The end index                                                                                                 
+  */                                                                                                                             
+  private static void mergeSort(int[] nums, int left, int right) {                                                                
+  if (left >= right) {
+      return;
+  }
+
+  // Get the middle index between [left, right] using bit shift to prevent overflow
+  int mid = left + ((right - left) >> 1);
+
+  mergeSort(nums, left, mid);
+  mergeSort(nums, mid + 1, right);
+
+  // merge the left and right in sorted order
+  int[] sorted = new int[right - left + 1];
+
+  int sortedIndex = 0;
+  int leftIndex = left;
+  int rightIndex = mid + 1;
+
+  while (leftIndex <= mid && rightIndex <= right) {
+      if (nums[leftIndex] < nums[rightIndex]) {
+      sorted[sortedIndex] = nums[leftIndex++];
+      } else {
+      sorted[sortedIndex] = nums[rightIndex++];
+      }
+      sortedIndex += 1;
+  }
+
+  // copy the rest of elements into the sorted array
+  while (leftIndex <= mid) sorted[sortedIndex++] = nums[leftIndex++];
+  while (rightIndex <= right) sorted[sortedIndex++] = nums[rightIndex++];
+
+  // sort the original nums array
+  for (int i = 0; i < sorted.length; i++) {
+      nums[left + i] = sorted[i];
+  }
+}
+```
+
+*Here is the [implementation](../algorithms-data-structures/merge-sort/MergeSort.java)*
 </details>
