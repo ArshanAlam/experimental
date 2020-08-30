@@ -344,8 +344,8 @@ Where
 #### The Theorem
 `T(n)` is one of:
 
-1. `O(n^d * logn)`                  **if a = b^d (root heavy)**
-2. `O(n^d)`                         **if a < b^d**
+1. `O(n^d * logn)`                  **if a = b^d**
+2. `O(n^d)`                         **if a < b^d (root heavy)**
 3. `O(n^log_b(a)) = O(a^log_b(n))`  **if a > b^d (leaves heavy)**
 
 *Note: In case 3 the base of the logarithm matters!*
