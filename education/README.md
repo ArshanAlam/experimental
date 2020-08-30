@@ -26,6 +26,7 @@ diffuse
 
 
 ![Diffuse Mode Octopus](images/learning-how-to-learn/diffuse-mode-octopus.png)
+![Diffuse Mode Pinball Machine](images/learning-how-to-learn/diffuse-mode.jpg)
 </details>
 
 
