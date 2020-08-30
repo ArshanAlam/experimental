@@ -148,3 +148,59 @@ Let `T(n)` be a function on `n = 1, 2, 3,...`. Then ![tn_theta_fn][tn_theta_fn] 
 [tn_theta_fn]: https://render.githubusercontent.com/render/math?math=T(n)%20=%20\Theta(f(n))
 [big_theta]: https://render.githubusercontent.com/render/math?math=\Theta
 </details>
+
+
+### Karatsuba Multiplication
+<details>
+
+Karatsuba Mutiplication is a recursive algorithm for multiplying two `n` digit numbers.
+
+* Time Complexity: `O(n^(log_2(3)))` which is approximately `O(n^1.59)`
+* Space Complexity: `O(n)`
+
+
+```
+// x = 10^(n/2) * a + b
+// y = 10^(n/2) * c + d
+// x * y = 10^n * a * c  + 10^(n/2) * (a * d + b * c) + (b * d)
+// 1. Recursively compute ac
+// 2. Recursively compute bd
+// 3. Recursively compute (a + b)(c + d) = ac + bd + ad + bc
+// Gauss' Trick: (3) - (1) - (2) = ad + bc
+// Upshot: Only need three recursive multiplications (and some additions)
+def karatsuba(x, y) {
+    if (x < 10 && y < 10) {
+        return x * y
+    }
+
+    // calculate the size of the input (the number of digits)
+    n = min(size_base10(x), size_base10(y))
+    nHalf = n / 2
+
+    // split the digits in the middle
+    xHigh, xLow = split_at(x, nHalf)
+    yHigh, yLow = split_at(y, nHalf)
+
+    // 3 calls made to numbers that are approximately half the size
+    z0 = karatsuba(xLow, yLow)
+    z1 = karatsuba((xLow + xHigh), (yLow + yHigh))
+    z2 = karatsuba(xHigh, yHigh)
+
+    return (z2 * 10^(nHalf * 2)) + ((z1 - z2 - z0) * 10^nHalf) + z0
+}
+```
+
+*Here is the [implementation](../algorithms-data-structures/karatsuba-multiplication/Karatsuba.java)*
+</details>
+
+
+### Merge Sort
+<details>
+
+[Merge sort](https://en.wikipedia.org/wiki/Merge_sort) is a [divide and conquer](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm) that sorts an array of `n` numbers.
+
+* Time Complexity: `O(nlogn)`
+* Space Complexity: `O(n)`
+
+
+</details>
