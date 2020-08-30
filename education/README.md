@@ -121,6 +121,12 @@ Focused
 * Brain connectivity is dynamic (that is, it changes), not static.
 </details>
 
+### The Law of Serendipity
+<details>
+
+Lady Luck favors the one who tries
+</details>
+
 
 ## Algorithms
 
