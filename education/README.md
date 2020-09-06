@@ -165,6 +165,7 @@ The idea that a chunk you’ve mastered in one area can often help you much more
   - Bill Gates and other industry leaders set aside extended, modulelong reading periods so that they can hold many and varied ideas in mind during one time. This helps generate their own innovative thinking by allowing fresh-in-mind, not-yet-forgotten ideas to network among themselves.
 - Chunking isn't all you need to develop creative flexibility in your learning-but it's an important component.
 - Basically, what people do to enhance their knowledge and gain expertise is to gradually build the number of chunks in their mind-valuable bits of information that they can piece together in new and creative ways.
+- The best chunks are ones that are so well-ingrained that you don’t have to consciously think about connecting the neural pattern together. That, actually, is the point of making complex ideas, movements or reactions into a single chunk.
 </details>
 
 
@@ -236,6 +237,107 @@ Einstellung is when your initial thought, an idea you already have in mind, or a
 - Metaphor
 </details>
 
+
+### What are the four parts of habits?
+<details>
+
+1. The belief
+2. The reward
+3. The routine
+4. The cue
+</details>
+
+### Learning and Procrastination
+<details>
+
+- It is perfectly normal to start with a few negative feelings about beginning a learning session—even when it’s a subject you ordinarily like. It’s how you handle those feelings that matters.
+- To prevent procrastination, you want to avoid concentrating on product. Instead, your attention should be on building processes.  Processes relate to simple habits—habits that coincidentally allow you to do the unpleasant tasks that need to be done.
+- Don't just blindly follow your passions--also work to broaden your passions by keeping yourself open to learning new things, even if you feel you don't have a talent for them.
+- We ordinarily think of learning as something we do when we sit down to study a book.  But actually, being able to learn more easily and deeply involves many important facets--including not only periods of focused concentration, but also periods of relaxation, and even times when the body is simply out getting exercise, or even when it's sleeping. Your brain can be busy figuring things out during times when you have absolutely no conscious awareness of it.
+</details>
+
+
+### Task Lists and Planner Journals
+<details>
+
+- Planning your quitting time is as important as planning your working time. 
+- It's good to make notes in your planner/journal about what works and what doesn’t.
+</details>
+
+
+### Which of the following are good study habits to develop?
+<details>
+
+- Interleave your learning by alternating your practice with different types of problems--don't waste study time by simply repeating the same technique over and over again.
+- Space out study sessions with smaller bits of information to be mastered in each session.
+</details>
+
+
+### Procrastination
+<details>
+
+- Procrastination shares characteristics with addiction.
+- General habits of procrastination can negatively impact many aspects of your life.
+- Procrastination often involves shifting your focus away from something you find uncomfortable.
+</details>
+
+
+### What was the term "zombie mode” used to refer to?
+<details>
+It refers to the relaxed state your mind enters when you are performing common and habitual tasks. Examples of zombie states and habitual behavior include riding a bike, getting dressed in the morning, and being able to back your car out of a driveway (if you are familiar and comfortable with driving).
+</details>
+
+
+### Distinction between "process" and "product"
+<details>
+
+- The Pomodoro technique is effective because it helps you get into the flow of the process.
+- "Product" refers to the outcome of a task. Examples of "product" include finishing a homework set or completing the writing of a report.
+</details>
+
+
+### Statements about good working/studying methods, procrastination and how to overcome procrastination.
+<details>
+
+- Keep a planner journal and keep track of the methods and techniques that work best for you.
+- Making your task list is best done at night before you go to sleep because research has shown that it helps to enlist your zombies (subconscious processes) to process the list, making them easier to get through the items on that list the next day.
+- Pay attention for procrastination cues and remove yourself from environments that contain many distractions and procrastination cues.
+</details>
+
+
+### what could you do to reduce the effects of cues that can cause you to procrastinate?
+<details>
+
+- Set yourself up in an area that is helpful for studying, like a quiet corner in the library or your favorite comfortable chair at home. (Keep in mind, though, that it can also be good to sometimes change the place where you study, so you become used to different environmental cues.)
+- Remove distractions by turning off your cell phone or disconnecting the internet.
+</details>
+
+
+### Memory
+<details>
+
+- To begin tapping into your visual memory system, try making a very memorable visual image representing one key item you want to remember.
+- We have outstanding visual and spatial memory systems that help form part of our long term memory.
+- Repetition is important; even when you make something memorable, repetition helps get that memorable item firmly lodged in long term memory.  Remember to repeat—not a bunch of times in one day, but sporadically over several days.
+</details>
+
+
+### Which techniques are beneficial in helping you to remember?
+<details>
+
+- Use the first letter from each item on the list to create an easy-to-remember sentence, such as "Old People From Texas Eat Spiders" (for the cranial bones).
+- Use the memory palace technique--imagine a place you are very familiar with (your "palace") and then deposit memorable versions of the item on your list in various locations in your palace.
+</details>
+
+
+### Long term memories for facts and events:
+<details>
+
+- Are subject to modification by a process called "reconsolidation."
+- Are living parts of your brain that change each time you access them
+
+Whenever you reactivate a memory, the memory changes, a process called reconsolidation. It is even possible to implant false memories, which at this stage in our technological capability appear indistinguishable from old ones, by suggestion and imagination, especially in children who have vivid imaginations.
+</details>
 
 
 ---
