@@ -305,7 +305,7 @@ It refers to the relaxed state your mind enters when you are performing common a
 </details>
 
 
-### what could you do to reduce the effects of cues that can cause you to procrastinate?
+### What could you do to reduce the effects of cues that can cause you to procrastinate?
 <details>
 
 - Set yourself up in an area that is helpful for studying, like a quiet corner in the library or your favorite comfortable chair at home. (Keep in mind, though, that it can also be good to sometimes change the place where you study, so you become used to different environmental cues.)
