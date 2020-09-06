@@ -162,7 +162,7 @@ The idea that a chunk you’ve mastered in one area can often help you much more
 - One of the first steps toward gaining expertise in academic topics is to create conceptual chunks-mental leaps that unite scattered bits of information through meaning.
 - The bigger and more well-practiced your chunked mental library-whatever the subject you are learning-the more easily you will be able to solve problems and figure out solutions.
 - The ability to combine chunks in new and original ways underlies a lot of historical innovation.
-...Bill Gates and other industry leaders set aside extended, modulelong reading periods so that they can hold many and varied ideas in mind during one time. This helps generate their own innovative thinking by allowing fresh-in-mind, not-yet-forgotten ideas to network among themselves.
+  - Bill Gates and other industry leaders set aside extended, modulelong reading periods so that they can hold many and varied ideas in mind during one time. This helps generate their own innovative thinking by allowing fresh-in-mind, not-yet-forgotten ideas to network among themselves.
 - Chunking isn't all you need to develop creative flexibility in your learning-but it's an important component.
 - Basically, what people do to enhance their knowledge and gain expertise is to gradually build the number of chunks in their mind-valuable bits of information that they can piece together in new and creative ways.
 </details>
