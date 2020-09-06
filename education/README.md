@@ -121,6 +121,7 @@ Focused
 * Brain connectivity is dynamic (that is, it changes), not static.
 </details>
 
+
 ### The Law of Serendipity
 <details>
 
@@ -128,6 +129,59 @@ Lady Luck favors the one who tries
 </details>
 
 
+### Which three methods are more likely to produce illusions of competence in learning?
+<details>
+
+1. Concept mapping
+2. Rereading the text
+3. Highlighting more than one or so sentence in a paragraph
+
+#### Concept Mapping
+Although concept mapping can have its place, research has shown that it's less effective than another powerful technique--simple recall. Remember, connecting concepts isn't going to help if you don't have the concepts already well-embedded in the brain. It's like trying to learn higher strategy in chess without having learned the basics about how the pieces move.
+
+#### Rereading The Text
+When the text is open right in front of you, it fools you into thinking that you know the material. But you only really know that material for certain when you can recall the material--or at least the key ideas--WITHOUT the text open in front of you.
+
+#### Highlighting more than one or so sentence in a paragraph
+With highlighting, the fact that your hand is moving can fool you into thinking you're putting something into your brain, when you're not.
+</details>
+
+
+### Transfer
+<details>
+
+The idea that a chunk you’ve mastered in one area can often help you much more easily learn chunks of information in different areas that can share surprising commonalities.
+</details>
+
+
+### Chunks/Chunking
+<details>
+
+- Improvising a new sentence in a new language you are learning involves the ability to creatively mix together various complex minichunks and chunks (sounds and words) that you have mastered in the new language.
+- Chunks can help you understand new concepts. This is because when you grasp one chunk, you will find that that chunk can be related in surprising ways to similar chunks not only in that field, but also in very different fields.
+- One of the first steps toward gaining expertise in academic topics is to create conceptual chunks-mental leaps that unite scattered bits of information through meaning.
+</details>
+
+
+### Which of the following observations related to the "octopus of attention" analogy are true?
+<details>
+
+- When you are stressed, your "attentional octopus" begins to lose the ability to make connections. This is why your brain doesn't seem to work right when you're angry, stressed, or afraid.
+- Focusing your "octopus of attention" to connect parts of the brain to tie together ideas is an important part of the focused mode of learning. It is also often what helps get you started in creating a chunk.
+
+![Octopus of Attention](images/learning-how-to-learn/octopus_of_attention.jpg)
+</details>
+
+
+### Three Steps that are vitally important in making a chunk
+<details>
+
+1. Understanding of the basic idea
+2. Practice to help you gain mastery and a sense of the big-picture context.
+3. Focused attention
+</details>
+
+---
 ## Algorithms
 
 ### Definition of Big O Notation
