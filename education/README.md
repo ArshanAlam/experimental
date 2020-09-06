@@ -224,8 +224,8 @@ Einstellung is when your initial thought, an idea you already have in mind, or a
 <details>
 
 - Acetylcholine affects focused learning and attention
-- Serotonin affects social life and risk-taking behavior
 - Dopamine signals in relation to unexpected reward
+- Serotonin affects social life and risk-taking behavior
 </details>
 
 
