@@ -160,6 +160,11 @@ The idea that a chunk you’ve mastered in one area can often help you much more
 - Improvising a new sentence in a new language you are learning involves the ability to creatively mix together various complex minichunks and chunks (sounds and words) that you have mastered in the new language.
 - Chunks can help you understand new concepts. This is because when you grasp one chunk, you will find that that chunk can be related in surprising ways to similar chunks not only in that field, but also in very different fields.
 - One of the first steps toward gaining expertise in academic topics is to create conceptual chunks-mental leaps that unite scattered bits of information through meaning.
+- The bigger and more well-practiced your chunked mental library-whatever the subject you are learning-the more easily you will be able to solve problems and figure out solutions.
+- The ability to combine chunks in new and original ways underlies a lot of historical innovation.
+...Bill Gates and other industry leaders set aside extended, modulelong reading periods so that they can hold many and varied ideas in mind during one time. This helps generate their own innovative thinking by allowing fresh-in-mind, not-yet-forgotten ideas to network among themselves.
+- Chunking isn't all you need to develop creative flexibility in your learning-but it's an important component.
+- Basically, what people do to enhance their knowledge and gain expertise is to gradually build the number of chunks in their mind-valuable bits of information that they can piece together in new and creative ways.
 </details>
 
 
@@ -180,6 +185,58 @@ The idea that a chunk you’ve mastered in one area can often help you much more
 2. Practice to help you gain mastery and a sense of the big-picture context.
 3. Focused attention
 </details>
+
+
+### Deliberate Practice
+<details>
+
+Focusing intently on the parts of the problem that are more difficult to you. Deliberate practice is continuing to focus of the material you find hardest and is important to productive studying.
+</details>
+
+
+### Context
+<details>
+
+Where bottom up and top down learning meet.
+
+Learning takes place in two ways. There's a bottom up chunking process, where practicing repetition can help you both build and strengthen each chunk, so you can easily access it whenever you need to. And there is also a sort of a top down big picture process that allows you to see what you are learning and where it fits in. Both processes are vital in gaining mastery over the material. "Context" is where bottom up and top down learning meet.
+</details>
+
+
+### Learning
+<details>
+
+- Once you’ve got the basic idea down during a session, continuing to hammer away at it during the same session doesn’t strengthen the kinds of long-term memory connections you want to have strengthened. Worse yet, focusing on one technique is a little like learning carpentry by only practicing with a hammer. After a while, you think you can fix anything by just bashing it.
+- Interleaving your studies—making a point to review for a test, for example, by skipping around through problems in the different chapters and materials—can sometimes seem to make your learning more difficult. But in reality, it helps you learn more deeply.
+- One significant mistake students sometimes make in learning is jumping into the water before they learn to swim. In other words, they blindly start working on homework without reading the textbook, attending lectures, viewing online lessons, or speaking with someone knowledgeable. It’s like randomly allowing a thought to pop off in the focused-mode pinball machine without paying any real attention to where the solution truly lies. 
+- Although practice and repetition are important in helping build solid neural patterns to draw on, it’s interleaving that starts building flexibility and creativity.  It’s where you leave the world of practice and repetition and begin thinking more independently.
+</details>
+
+
+### Einstellung
+<details>
+
+Einstellung is when your initial thought, an idea you already have in mind, or a neural pattern you’ve already developed and strengthened, prevents a better idea or solution from being found, or keeps you from being flexible enough to accept new, better, or more appropriate solutions.
+</details>
+
+
+### The neuromodulators acetylcholine, dopamine, and serotonin were mentioned as affecting specific areas. What are the three true statements about which areas these neurotransmitters affect?
+<details>
+
+- Acetylcholine affects focused learning and attention
+- Serotonin affects social life and risk-taking behavior
+- Dopamine signals in relation to unexpected reward
+</details>
+
+
+### Which methods can help when trying to learn something new?
+<details>
+
+- Analogy
+- Metaphor
+</details>
+
+
 
 ---
 ## Algorithms
