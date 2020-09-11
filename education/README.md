@@ -385,7 +385,7 @@ Whenever you reactivate a memory, the memory changes, a process called reconsoli
 
 * You often realize the first time you truly understand something is when you can actually do it yourself.
 * Can you create a chunk if you don’t understand? Yes, but it’s often a useless chunk that won’t fit in with or relate to other material you are learning.
-<details>
+</details>
 
 
 ---
