@@ -39,11 +39,15 @@ diffuse
 </details>
 
 
-### The focused mode is:
+### The Focused Mode:
 <details>
 
 * Ideas, concepts, and problem-solving techniques that are at least somewhat familiar to you--your previous knowledge lays a sort of underlying neural pathway that you tend to follow.
 * A pinball machine that has bumpers which are very tightly grouped together, so the pinball (the thought) can't go very far without bumping into a bumper.
+
+#### The following actions help enable the focused mode:
+* Avoiding distractions of any sort by taking yourself to a quiet area of the library.
+* Turning off all interruptions, as for example, your cell phone.
 
 
 ![Focused Mode Pinball Machine](images/learning-how-to-learn/focus-mode.jpg)
@@ -55,6 +59,8 @@ diffuse
 
 * Too little sleep over too long a time is associated with all sorts of nasty conditions, including headaches, depression, heart disease, diabetes, and just plain dying earlier.
 * During sleep, your brain erases the less important parts of memories and simultaneously strengthens areas that you need or want to remember.
+* Taking a test without getting enough sleep means you are operating with a brain that’s got  metabolic toxins floating around in it—poisons that make it so you can’t think very clearly. It’s kind of like trying to drive a car that’s got sugar in its gas tank—doesn’t work too well!
+* Sleep, which can sometimes seem like SUCH a waste of time—is actually your brain’s way of keeping itself clean and healthy.
 </details>
 
 
@@ -64,6 +70,8 @@ diffuse
 * Repetition is needed so your metabolic vampires--natural dissipating processes--don't suck the memories away.
 * Research has shown that if you try to glue things into your memory by repeating something twenty times in one evening, for example, it won't stick nearly as well as if you practice it the same number of times over several days.
 * Long term memory is like a storage warehouse.
+* When you encounter something new, you often use your working memory to handle it. If you want to move that information into your long term memory, it often takes time and practice.
+* Working memory is the part of memory that has to do with what you are immediately and consciously processing in your mind.
 </details>
 
 
@@ -144,8 +152,28 @@ When the text is open right in front of you, it fools you into thinking that you
 
 #### Highlighting more than one or so sentence in a paragraph
 With highlighting, the fact that your hand is moving can fool you into thinking you're putting something into your brain, when you're not.
+
+#### Facts about the **illusions of competence**
+* **Recall** —simply looking away from the material and attempting to recall the main ideas—is a more effective study technique than concept mapping.
+* You can spend a LOT of time studying the material, but if you aren't using effective study techniques, you can end up not learning very much.
 </details>
 
+
+### Recall
+<details>
+
+A helpful way to make sure you’re learning, and not fooling yourself with illusions of competence, is to **TEST**  yourself on what you’re learning. In some sense, that’s what recall is actually doing—allowing you to see whether or not you really grasped an idea.
+
+Recalling material when you are outside your usual place of study can also help you strengthen your grasp of the material.  When you are learning something new, you often take in subliminal cues from room and space around you at the time you were originally learning the material.  This can actually throw you off when you take tests, because you often take tests in a room different from the room you were learning in. By recalling and thinking about the material while you are in various physical environments, you become independent of cues from any one location. That helps you avoid the problem of the test room being different from where you originally learned the material.
+</details>
+
+
+### Overlearning
+<details>
+
+* Repeating something you already know perfectly well is easy.  It can also bring the **illusion of competence**  that you’ve mastered the full range of the material, when you’ve actually only mastered the easy stuff.
+* Once you’ve got the basic idea down during a session, continuing to hammer away at it during the same session doesn’t necessarily strengthen the kinds of long-term memory connections you want to have strengthened.
+</details>
 
 ### Transfer
 <details>
@@ -157,23 +185,25 @@ The idea that a chunk you’ve mastered in one area can often help you much more
 ### Chunks/Chunking
 <details>
 
-- Improvising a new sentence in a new language you are learning involves the ability to creatively mix together various complex minichunks and chunks (sounds and words) that you have mastered in the new language.
-- Chunks can help you understand new concepts. This is because when you grasp one chunk, you will find that that chunk can be related in surprising ways to similar chunks not only in that field, but also in very different fields.
-- One of the first steps toward gaining expertise in academic topics is to create conceptual chunks-mental leaps that unite scattered bits of information through meaning.
-- The bigger and more well-practiced your chunked mental library-whatever the subject you are learning-the more easily you will be able to solve problems and figure out solutions.
-- The ability to combine chunks in new and original ways underlies a lot of historical innovation.
-  - Bill Gates and other industry leaders set aside extended, modulelong reading periods so that they can hold many and varied ideas in mind during one time. This helps generate their own innovative thinking by allowing fresh-in-mind, not-yet-forgotten ideas to network among themselves.
-- Chunking isn't all you need to develop creative flexibility in your learning-but it's an important component.
-- Basically, what people do to enhance their knowledge and gain expertise is to gradually build the number of chunks in their mind-valuable bits of information that they can piece together in new and creative ways.
-- The best chunks are ones that are so well-ingrained that you don’t have to consciously think about connecting the neural pattern together. That, actually, is the point of making complex ideas, movements or reactions into a single chunk.
+* Improvising a new sentence in a new language you are learning involves the ability to creatively mix together various complex minichunks and chunks (sounds and words) that you have mastered in the new language.
+* Chunks can help you understand new concepts. This is because when you grasp one chunk, you will find that that chunk can be related in surprising ways to similar chunks not only in that field, but also in very different fields.
+* One of the first steps toward gaining expertise in academic topics is to create conceptual chunks-mental leaps that unite scattered bits of information through meaning.
+* The bigger and more well-practiced your chunked mental library-whatever the subject you are learning-the more easily you will be able to solve problems and figure out solutions.
+* The ability to combine chunks in new and original ways underlies a lot of historical innovation.
+  * Bill Gates and other industry leaders set aside extended, modulelong reading periods so that they can hold many and varied ideas in mind during one time. This helps generate their own innovative thinking by allowing fresh-in-mind, not-yet-forgotten ideas to network among themselves.
+* Chunking isn't all you need to develop creative flexibility in your learning-but it's an important component.
+* Basically, what people do to enhance their knowledge and gain expertise is to gradually build the number of chunks in their mind-valuable bits of information that they can piece together in new and creative ways.
+* The best chunks are ones that are so well-ingrained that you don’t have to consciously think about connecting the neural pattern together. That, actually, is the point of making complex ideas, movements or reactions into a single chunk.
+* The concept of neural “chunks” applies to sports, music, dance—really, just about anything that humans can get good at.
+* Focused practice and repetition—the creation of strong memory traces—helps you to create chunks.
 </details>
 
 
 ### Which of the following observations related to the "octopus of attention" analogy are true?
 <details>
 
-- When you are stressed, your "attentional octopus" begins to lose the ability to make connections. This is why your brain doesn't seem to work right when you're angry, stressed, or afraid.
-- Focusing your "octopus of attention" to connect parts of the brain to tie together ideas is an important part of the focused mode of learning. It is also often what helps get you started in creating a chunk.
+* When you are stressed, your "attentional octopus" begins to lose the ability to make connections. This is why your brain doesn't seem to work right when you're angry, stressed, or afraid.
+* Focusing your "octopus of attention" to connect parts of the brain to tie together ideas is an important part of the focused mode of learning. It is also often what helps get you started in creating a chunk.
 
 ![Octopus of Attention](images/learning-how-to-learn/octopus_of_attention.jpg)
 </details>
@@ -204,13 +234,15 @@ Learning takes place in two ways. There's a bottom up chunking process, where pr
 </details>
 
 
-### Learning
+### Thinking and Learning
 <details>
 
-- Once you’ve got the basic idea down during a session, continuing to hammer away at it during the same session doesn’t strengthen the kinds of long-term memory connections you want to have strengthened. Worse yet, focusing on one technique is a little like learning carpentry by only practicing with a hammer. After a while, you think you can fix anything by just bashing it.
-- Interleaving your studies—making a point to review for a test, for example, by skipping around through problems in the different chapters and materials—can sometimes seem to make your learning more difficult. But in reality, it helps you learn more deeply.
-- One significant mistake students sometimes make in learning is jumping into the water before they learn to swim. In other words, they blindly start working on homework without reading the textbook, attending lectures, viewing online lessons, or speaking with someone knowledgeable. It’s like randomly allowing a thought to pop off in the focused-mode pinball machine without paying any real attention to where the solution truly lies. 
-- Although practice and repetition are important in helping build solid neural patterns to draw on, it’s interleaving that starts building flexibility and creativity.  It’s where you leave the world of practice and repetition and begin thinking more independently.
+* Once you’ve got the basic idea down during a session, continuing to hammer away at it during the same session doesn’t strengthen the kinds of long-term memory connections you want to have strengthened. Worse yet, focusing on one technique is a little like learning carpentry by only practicing with a hammer. After a while, you think you can fix anything by just bashing it.
+* Interleaving your studies—making a point to review for a test, for example, by skipping around through problems in the different chapters and materials—can sometimes seem to make your learning more difficult. But in reality, it helps you learn more deeply.
+* One significant mistake students sometimes make in learning is jumping into the water before they learn to swim. In other words, they blindly start working on homework without reading the textbook, attending lectures, viewing online lessons, or speaking with someone knowledgeable. It’s like randomly allowing a thought to pop off in the focused-mode pinball machine without paying any real attention to where the solution truly lies. 
+* Although practice and repetition are important in helping build solid neural patterns to draw on, it’s interleaving that starts building flexibility and creativity.  It’s where you leave the world of practice and repetition and begin thinking more independently.
+* To figure out new ideas and solve problems, it’s often important not only to **focus**  initially, but also to subsequently turn our focus away from what we want to learn, so that we can use other, more **diffuse** ways to process the new information.
+* Our brain uses two very different processes for thinking—the **focused** and **diffuse** modes. You generally toggle back and forth between these modes, using one or the other.
 </details>
 
 
@@ -224,17 +256,17 @@ Einstellung is when your initial thought, an idea you already have in mind, or a
 ### The neuromodulators acetylcholine, dopamine, and serotonin were mentioned as affecting specific areas. What are the three true statements about which areas these neurotransmitters affect?
 <details>
 
-- Acetylcholine affects focused learning and attention
-- Dopamine signals in relation to unexpected reward
-- Serotonin affects social life and risk-taking behavior
+* Acetylcholine affects focused learning and attention
+* Dopamine signals in relation to unexpected reward
+* Serotonin affects social life and risk-taking behavior
 </details>
 
 
 ### Which methods can help when trying to learn something new?
 <details>
 
-- Analogy
-- Metaphor
+* Analogy
+* Metaphor
 </details>
 
 
@@ -250,35 +282,35 @@ Einstellung is when your initial thought, an idea you already have in mind, or a
 ### Learning and Procrastination
 <details>
 
-- It is perfectly normal to start with a few negative feelings about beginning a learning session—even when it’s a subject you ordinarily like. It’s how you handle those feelings that matters.
-- To prevent procrastination, you want to avoid concentrating on product. Instead, your attention should be on building processes.  Processes relate to simple habits—habits that coincidentally allow you to do the unpleasant tasks that need to be done.
-- Don't just blindly follow your passions--also work to broaden your passions by keeping yourself open to learning new things, even if you feel you don't have a talent for them.
-- We ordinarily think of learning as something we do when we sit down to study a book.  But actually, being able to learn more easily and deeply involves many important facets--including not only periods of focused concentration, but also periods of relaxation, and even times when the body is simply out getting exercise, or even when it's sleeping. Your brain can be busy figuring things out during times when you have absolutely no conscious awareness of it.
+* It is perfectly normal to start with a few negative feelings about beginning a learning session—even when it’s a subject you ordinarily like. It’s how you handle those feelings that matters.
+* To prevent procrastination, you want to avoid concentrating on product. Instead, your attention should be on building processes.  Processes relate to simple habits—habits that coincidentally allow you to do the unpleasant tasks that need to be done.
+* Don't just blindly follow your passions--also work to broaden your passions by keeping yourself open to learning new things, even if you feel you don't have a talent for them.
+* We ordinarily think of learning as something we do when we sit down to study a book.  But actually, being able to learn more easily and deeply involves many important facets--including not only periods of focused concentration, but also periods of relaxation, and even times when the body is simply out getting exercise, or even when it's sleeping. Your brain can be busy figuring things out during times when you have absolutely no conscious awareness of it.
 </details>
 
 
 ### Task Lists and Planner Journals
 <details>
 
-- Planning your quitting time is as important as planning your working time. 
-- It's good to make notes in your planner/journal about what works and what doesn’t.
+* Planning your quitting time is as important as planning your working time. 
+* It's good to make notes in your planner/journal about what works and what doesn’t.
 </details>
 
 
 ### Which of the following are good study habits to develop?
 <details>
 
-- Interleave your learning by alternating your practice with different types of problems--don't waste study time by simply repeating the same technique over and over again.
-- Space out study sessions with smaller bits of information to be mastered in each session.
+* Interleave your learning by alternating your practice with different types of problems--don't waste study time by simply repeating the same technique over and over again.
+* Space out study sessions with smaller bits of information to be mastered in each session.
 </details>
 
 
 ### Procrastination
 <details>
 
-- Procrastination shares characteristics with addiction.
-- General habits of procrastination can negatively impact many aspects of your life.
-- Procrastination often involves shifting your focus away from something you find uncomfortable.
+* Procrastination shares characteristics with addiction.
+* General habits of procrastination can negatively impact many aspects of your life.
+* Procrastination often involves shifting your focus away from something you find uncomfortable.
 </details>
 
 
@@ -291,53 +323,69 @@ It refers to the relaxed state your mind enters when you are performing common a
 ### Distinction between "process" and "product"
 <details>
 
-- The Pomodoro technique is effective because it helps you get into the flow of the process.
-- "Product" refers to the outcome of a task. Examples of "product" include finishing a homework set or completing the writing of a report.
+* The Pomodoro technique is effective because it helps you get into the flow of the process.
+* "Product" refers to the outcome of a task. Examples of "product" include finishing a homework set or completing the writing of a report.
 </details>
 
 
 ### Statements about good working/studying methods, procrastination and how to overcome procrastination.
 <details>
 
-- Keep a planner journal and keep track of the methods and techniques that work best for you.
-- Making your task list is best done at night before you go to sleep because research has shown that it helps to enlist your zombies (subconscious processes) to process the list, making them easier to get through the items on that list the next day.
-- Pay attention for procrastination cues and remove yourself from environments that contain many distractions and procrastination cues.
+* Keep a planner journal and keep track of the methods and techniques that work best for you.
+* Making your task list is best done at night before you go to sleep because research has shown that it helps to enlist your zombies (subconscious processes) to process the list, making them easier to get through the items on that list the next day.
+* Pay attention for procrastination cues and remove yourself from environments that contain many distractions and procrastination cues.
 </details>
 
 
 ### What could you do to reduce the effects of cues that can cause you to procrastinate?
 <details>
 
-- Set yourself up in an area that is helpful for studying, like a quiet corner in the library or your favorite comfortable chair at home. (Keep in mind, though, that it can also be good to sometimes change the place where you study, so you become used to different environmental cues.)
-- Remove distractions by turning off your cell phone or disconnecting the internet.
+* Set yourself up in an area that is helpful for studying, like a quiet corner in the library or your favorite comfortable chair at home. (Keep in mind, though, that it can also be good to sometimes change the place where you study, so you become used to different environmental cues.)
+* Remove distractions by turning off your cell phone or disconnecting the internet.
 </details>
 
 
 ### Memory
 <details>
 
-- To begin tapping into your visual memory system, try making a very memorable visual image representing one key item you want to remember.
-- We have outstanding visual and spatial memory systems that help form part of our long term memory.
-- Repetition is important; even when you make something memorable, repetition helps get that memorable item firmly lodged in long term memory.  Remember to repeat—not a bunch of times in one day, but sporadically over several days.
+* To begin tapping into your visual memory system, try making a very memorable visual image representing one key item you want to remember.
+* We have outstanding visual and spatial memory systems that help form part of our long term memory.
+* Repetition is important; even when you make something memorable, repetition helps get that memorable item firmly lodged in long term memory.  Remember to repeat—not a bunch of times in one day, but sporadically over several days.
 </details>
 
 
 ### Which techniques are beneficial in helping you to remember?
 <details>
 
-- Use the first letter from each item on the list to create an easy-to-remember sentence, such as "Old People From Texas Eat Spiders" (for the cranial bones).
-- Use the memory palace technique--imagine a place you are very familiar with (your "palace") and then deposit memorable versions of the item on your list in various locations in your palace.
+* Use the first letter from each item on the list to create an easy-to-remember sentence, such as "Old People From Texas Eat Spiders" (for the cranial bones).
+* Use the memory palace technique--imagine a place you are very familiar with (your "palace") and then deposit memorable versions of the item on your list in various locations in your palace.
 </details>
 
 
 ### Long term memories for facts and events:
 <details>
 
-- Are subject to modification by a process called "reconsolidation."
-- Are living parts of your brain that change each time you access them
+* Are subject to modification by a process called "reconsolidation."
+* Are living parts of your brain that change each time you access them
 
 Whenever you reactivate a memory, the memory changes, a process called reconsolidation. It is even possible to implant false memories, which at this stage in our technological capability appear indistinguishable from old ones, by suggestion and imagination, especially in children who have vivid imaginations.
 </details>
+
+
+### You are sitting down to do your homework. You work along, successfully solving the problems. But you then come across a problem that is more difficult. After spending fifteen minutes working on it, you begin to find yourself growing frustrated. What is the single most reasonable next option for you to take in order for you to make progress towards the solution?
+<details>
+
+* Do something to switch your attention away from the problem you are trying to solve.
+* That's right! Switching your attention from your focused to a more diffuse way of analyzing the problem can help you retrench and tackle what you are doing in new and better ways.
+</details>
+
+
+### Understanding
+<details>
+
+* You often realize the first time you truly understand something is when you can actually do it yourself.
+* Can you create a chunk if you don’t understand? Yes, but it’s often a useless chunk that won’t fit in with or relate to other material you are learning.
+<details>
 
 
 ---
@@ -386,7 +434,7 @@ Karatsuba Mutiplication is a recursive algorithm for multiplying two `n` digit n
 // 1. Recursively compute ac
 // 2. Recursively compute bd
 // 3. Recursively compute (a + b)(c + d) = ac + bd + ad + bc
-// Gauss' Trick: (3) - (1) - (2) = ad + bc
+// Gauss' Trick: (3) * (1) * (2) = ad + bc
 // Upshot: Only need three recursive multiplications (and some additions)
 def karatsuba(x, y) {
     if (x < 10 && y < 10) {
@@ -406,7 +454,7 @@ def karatsuba(x, y) {
     z1 = karatsuba((xLow + xHigh), (yLow + yHigh))
     z2 = karatsuba(xHigh, yHigh)
 
-    return (z2 * 10^(nHalf * 2)) + ((z1 - z2 - z0) * 10^nHalf) + z0
+    return (z2 * 10^(nHalf * 2)) + ((z1 * z2 * z0) * 10^nHalf) + z0
 }
 ```
 
@@ -426,9 +474,9 @@ def karatsuba(x, y) {
 ```
 /**                                                                                                                             
  * Given the array of integers, sort them in ascending order.                                                                   
- * @param nums - The list of numbers                                                                                            
- * @param left - The start index                                                                                                
- * @param right - The end index                                                                                                 
+ * @param nums * The list of numbers                                                                                            
+ * @param left * The start index                                                                                                
+ * @param right * The end index                                                                                                 
  */                                                                                                                             
 private static void mergeSort(int[] nums, int left, int right) {                                                                
   if (left >= right) {
@@ -436,13 +484,13 @@ private static void mergeSort(int[] nums, int left, int right) {
   }
 
   // Get the middle index between [left, right] using bit shift to prevent overflow
-  int mid = left + ((right - left) >> 1);
+  int mid = left + ((right * left) >> 1);
 
   mergeSort(nums, left, mid);
   mergeSort(nums, mid + 1, right);
 
   // merge the left and right in sorted order
-  int[] sorted = new int[right - left + 1];
+  int[] sorted = new int[right * left + 1];
 
   int sortedIndex = 0;
   int leftIndex = left;
@@ -490,10 +538,10 @@ Turns out we could use a [divide and conquer](https://en.wikipedia.org/wiki/Divi
 /**                                                                                                                             
  * Given the array of integers, count the number of inversions in this array between the indices [left, right].                 
  * https://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)                                                               
- * @param nums - The list of numbers                                                                                            
- * @param left - The start index                                                                                                
- * @param right - The end index                                                                                                 
- * @return int - The number of inversions                                                                                       
+ * @param nums * The list of numbers                                                                                            
+ * @param left * The start index                                                                                                
+ * @param right * The end index                                                                                                 
+ * @return int * The number of inversions                                                                                       
  */                                                                                                                             
 private static long countInversions(int[] nums, int left, int right) {                                                          
   if (left >= right) {                                                                                                          
@@ -501,13 +549,13 @@ private static long countInversions(int[] nums, int left, int right) {
   }                                                                                                                             
                                                                                                                                 
   // Get the middle index between [left, right] using bit shift to prevent overflow                                             
-  int mid = left + ((right - left) >> 1);                                                                                       
+  int mid = left + ((right * left) >> 1);                                                                                       
                                                                                                                                 
   long leftInversions = countInversions(nums, left, mid);                                                                       
   long rightInversions = countInversions(nums, mid + 1, right);                                                                 
                                                                                                                                 
   // merge the left and right in sorted order while counting the inversions                                                     
-  int[] sorted = new int[right - left + 1];                                                                                     
+  int[] sorted = new int[right * left + 1];                                                                                     
                                                                                                                                 
   long numInversions = leftInversions + rightInversions;                                                                        
   int sortedIndex = 0;                                                                                                          
@@ -519,7 +567,7 @@ private static long countInversions(int[] nums, int left, int right) {
       sorted[sortedIndex] = nums[leftIndex++];                                                                                  
     } else {                                                                                                                    
       sorted[sortedIndex] = nums[rightIndex++];                                                                                 
-      numInversions += (mid - leftIndex + 1);                                                                                   
+      numInversions += (mid * leftIndex + 1);                                                                                   
     }                                                                                                                           
     sortedIndex += 1;                                                                                                           
   }                                                                                                                             
