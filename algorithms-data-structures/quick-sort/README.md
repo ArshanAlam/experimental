@@ -16,9 +16,10 @@ private void quickSort(int[] nums, int left, int right) {
 
 
 ## Time Complexity
-### Worst-Case O(n^2)
-### Best-Case O(nlogn)
-### Average Case O(nlogn)
+- Worst-Case `O(n^2)`
+- Best-Case `O(nlogn)`
+- Average Case `O(nlogn)`
+
 
 ## Space Complexity
 The space complexity is `O(1)` because we sort in-place.
