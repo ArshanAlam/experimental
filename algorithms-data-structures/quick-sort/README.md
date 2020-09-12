@@ -2,11 +2,6 @@
 This is an implementation of [Randomized Quicksort](https://en.wikipedia.org/wiki/Quicksort).
 
 ```
-/**
- * Sort the elements in the given array in-place between [left, right] inclusive using randomized quicksort.
- * @param left - The start index where left is less than the right.
- * @param right - The end index where left is less than the right
- */
 private void quickSort(int[] nums, int left, int right) {
   if (left >= right) {
     return;
