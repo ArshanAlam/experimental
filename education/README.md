@@ -617,3 +617,97 @@ Where
 
 *Note: In case 3 the base of the logarithm matters!*
 </details>
+
+
+### Quicksort
+<details>
+
+This is an implementation of [Randomized Quicksort](https://en.wikipedia.org/wiki/Quicksort).
+
+#### Time Complexity
+- Worst-Case `O(n^2)`
+- Best-Case `O(nlogn)`
+- Average Case `O(nlogn)`
+
+
+#### Space Complexity
+The space complexity is `O(1)` because we sort in-place.
+
+```
+/**
+  * Sort the elements in the given array in-place between [left, right] inclusive using randomized quicksort.
+  * @param left - The start index where left is less than the right.
+  * @param right - The end index where left is less than the right
+  */
+private void quickSort(int[] nums, int left, int right) {
+  if (left >= right) {
+    return;
+  }
+
+  int pivot = getPivot(left, right);
+  int partitionIndex = partition(nums, pivot, left, right);
+  quickSort(nums, left, partitionIndex - 1);
+  quickSort(nums, partitionIndex + 1, right);
+}
+
+/**
+  * Pick a random pivot between left and right (inclusive).
+  * @param left - The start index
+  * @param right - The end index
+  * @return int - The random pivot
+  */
+private int getPivot(int left, int right) {
+  return random.nextInt(left, right + 1);
+}
+```
+</details>
+
+
+### Partition Around Pivot
+<details>
+
+To [partition](https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme) an array, around a pivot, means to move all elements in the array less than the pivot to the left of the pivot and all elements greater than or equal to the pivot to the right of the pivot. We return the index of the pivot element after the partition.
+
+- Time Complexity `O(n)`
+- Space Complexity `O(1)`
+
+
+```
+/**
+  * Partition the given array nums between [left, right] around the given pivot and return the index of the pivot element.
+  * @param nums - The array we want to partition
+  * @param pivot - The element we want to partition this array with respect to
+  * @param left - The start of the range
+  * @param right - The end of the range
+  * @return int - The index of the pivot element.
+  */
+private int partition(int[] nums, int pivot, int left, int right) {
+  swap(nums, left, pivot);
+  int swapIndex = left + 1;
+  for (int j = left + 1; j <= right; j++) {
+    if (nums[j] < nums[left]) {
+      swap(nums, swapIndex, j);
+      swapIndex += 1;
+    }
+  }
+  swap(nums, swapIndex - 1, left);
+  return swapIndex - 1;
+}
+
+/**
+  * Swap the element at index x with the element at index y.
+  * @param nums - The array in which we want to do a swap
+  * @param x - The first index
+  * @param y - The second index
+  */
+private void swap(int[] nums, int x, int y) {
+  if (x < 0 || x >= nums.length || y < 0 || y >= nums.length) {
+    return;
+  }
+
+  int tmp = nums[x];
+  nums[x] = nums[y];
+  nums[y] = tmp;
+}
+```
+</details>
