@@ -805,5 +805,58 @@ Let `X_1` be the random variable for die 1 and let `X_2` be the random variable 
 - The expected value of `X_1` is `E[X_1] = 1 * 1/6 + ... + 6 * 1/6 = (1 + 2 + 3 + 4 + 5 + 6) * 1/6 = 7/2`
 - The expected value of `X_2` is `E[X_2] = 1 * 1/6 + ... + 6 * 1/6 = (1 + 2 + 3 + 4 + 5 + 6) * 1/6 = 7/2`
 - By the linearity of expectation `E[X_1 + X_2] = E[X_1] + E[X_2] = 7/2 + 7/2 = 7`
+</details>
 
+
+### Conditional Probability
+<details>
+
+Let `X` and `Y` represent two events, that is `X, Y ⊆ Ω`.
+
+![Conditional Probability](images/probability/conditional-probability.png)
+
+
+The probability of event `X` given that something in `Y` happened is `P[X|Y] = P[X ∩ Y]/P[Y]`.
+
+#### Example: Two Fair Dice
+Suppose you roll two fair dice. What is the probability that at least one die is a 1, given that the sum of the two dice is 7?
+
+- `Y = {(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)}`
+- `X ∩ Y = {(1, 6), (6, 1)}`
+
+The `P[One die is 1 | Sum of the dice is 7] = P[(1, 6) or (6, 1)] / P[Sum of dice is 7] =  (2/36) / (6/36) = 1/3`.
+</details>
+
+
+### Independence of Events
+<details>
+
+Let `X` and `Y` represent two events, that is `X, Y ⊆ Ω`. Then `X` and `Y` are independent if and only if `P[X ∩ Y] = P[X] * P[Y]`.
+
+- `P[X|Y] = P[X]` and `P[Y|X] = P[Y]`
+- Knowing that something in `Y` has occurred does not effect the chance of something occurring in `X`, and vice versa.
+- **WARNING**: Independence is a *very* subtle concept (your intuition is often wrong!)
+</details>
+
+
+### Independence of Random Variables
+<details>
+
+Let `A` and `B` be random variables defined on the sample space `Ω`. Then `A` and `B` are independent if and only if the events `P[A = a]` and `P[B = b]` are independent for all `a` and `b`.
+
+- `P[A = a and B = b] = P[A = a] * P[B = b]`
+- If `A, B` are independent random variables then `E[A * B] = E[A] * E[B]`
+
+#### Example
+Let `X_1, X_2 ∈ {0, 1}` and `X_3 = X_1 ⊕ X_2` (⊕ -> XOR) be random variables.
+
+- Formally `Ω = {000, 011, 101, 110}` each are equally likely.
+- `X_1` and `X_3` are independent random variables.
+  - If we enumerate all four possible outcomes then all two-bit values occur for `X_1` and `X_3`
+
+##### Not Independent
+`Y = X_1 * X_3` and `X_2` are not independent random variables.
+- **Proof** `E[Y * X_2] = E[X_1 * X_2 * X_3] != E[Y] * E[X_2]`
+  - `E[Y] = 1/4` and `E[X_2] = 1/2` so `E[Y] * E[X_2] = 1/8`
+  - `E[Y * X_2] = 0` because multiplying all bits in every outcome of the sample space always gives zero
 </details>
