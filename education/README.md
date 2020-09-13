@@ -711,3 +711,99 @@ private void swap(int[] nums, int x, int y) {
 }
 ```
 </details>
+
+
+
+## Probability
+
+### Sample Space Ω
+<details>
+
+[Sample space](https://en.wikipedia.org/wiki/Sample_space) is the set of all possible outcomes.
+
+- The sample space is denoted as `Ω`.
+- In algorithms the sample space is usually finite
+- Each outcome `i ∈ Ω` has a probability `P(i) >= 0` and `sum(P(i)) = 1 ∀i ∈ Ω`
+
+
+#### Example: Rolling 2 Dice
+When rolling two dice the sample space is `Ω = {(1, 1), (1, 2), ..., (6, 6)}`.
+
+
+#### Example: Choosing a random pivot in Quicksort
+When choosing a pivot the sample space is `Ω = {1, 2, ..., n}` with `P(i) = 1/n ∀i ∈ Ω` 
+</details>
+
+
+### Event
+<details>
+
+An [event](https://en.wikipedia.org/wiki/Event_(probability_theory)) is a subset of the sample space.
+
+- An event is a subset `S ⊆ Ω`
+- The probability of an event `S` is the `sum(P(i)) ∀i ∈ S`
+
+#### Example: The sum of rolling two dice is 7
+Consider the event (i.e., the subset of outcomes for which) **the sum of rolling two dice is 7**. What is the probability of this event?
+
+- The event is `S = {(1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1)}`
+- The probability of any one outcome in `S` is `P(i) = 1/36`
+- The probability of `S` is `P(S) = sum(P(i)) = 6 * (1/36) = 6/36 = 1/6 ∀i ∈ S`
+
+
+#### Example: The chosen pivot in quicksort gives a 25-75 split or better
+Consider the event (i.e., the subset of outcomes for which) **the chosen pivot in quicksort gives a 25-75 split or better**. What is the probability of this event?
+
+- Let's assume that the size of the sample space is 100 (i.e, n = 100)
+  - **NOTE** If `n != 100` the analysis below would still hold because we would only consider the indices in the event that fall between `25% - 75%` range of the array.
+- The event is `S = {26, 27, ..., 75}`
+- The probability of any one outcome in `S` is `P(i) = 1/100`
+- The probability of `S` is `P(S) = sum(P(i)) = 50 * (1/100) = 50/100 = 1/2 ∀i ∈ S`
+- More generally the event is `S = {(n/4 + 1), ..., (3n/4)} for all integer n`
+  - The cardinality `|S| = n/2`
+</details>
+
+
+### Random Variables
+<details>
+
+A [random variable](https://en.wikipedia.org/wiki/Random_variable) `X` is a real-valued function `X: Ω -> R` whose values depend on outcomes of a random phenomenon.
+
+#### Here are some examples of random variables
+- A random variable that takes the roll of two dice and outputs the sum of the rolled values
+- Size of the subarray in quicksort
+  - equivalently the number of elements in the input array that are smaller than the randomly chosen pivot
+</details>
+
+
+### Expectation of Random Variable
+<details>
+
+- Let `X: Ω -> R` be a random variable. Then the expectation `E[X]` of `X` is the weighted average value of `X`.
+- More formally `E[X] = sum(X(i) * P(i)) ∀i ∈ Ω`
+
+#### Example: What is the expectation of the sum of two dice?
+- The average value is `7`
+  - This value could be computed using brute-force from the definition
+  - A better way to get this answer is through the *linearity of expectation*
+
+#### Example: What is the expectation of the size of the subarray passed to the first recuraive call in QuickSort?
+- On average `(n - 1)/2` elements would be less than the chosen pivot
+- Let `X = subarray size` be the random variable then `E[X] = 0 * 1/n  + 1 * 1/n + 2 * 1/n + ... + (n - 1) * 1/n = (n - 1)/2`.
+</details>
+
+
+### Linearity of Expectation
+<details>
+
+**Theorem** Let `X_1, X_2, ..., X_n` be random variables defined on the same sample space `Ω`. Then `E[sum(X_i) ∀i] = sum(E[X_i] ∀i)`.
+
+- This theorem is very useful because it even works when the random variables are not independent.
+
+#### Example
+Let `X_1` be the random variable for die 1 and let `X_2` be the random variable of die 2.
+- The expected value of `X_1` is `E[X_1] = 1 * 1/6 + ... + 6 * 1/6 = (1 + 2 + 3 + 4 + 5 + 6) * 1/6 = 7/2`
+- The expected value of `X_2` is `E[X_2] = 1 * 1/6 + ... + 6 * 1/6 = (1 + 2 + 3 + 4 + 5 + 6) * 1/6 = 7/2`
+- By the linearity of expectation `E[X_1 + X_2] = E[X_1] + E[X_2] = 7/2 + 7/2 = 7`
+
+</details>
