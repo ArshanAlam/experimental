@@ -64,17 +64,6 @@ diffuse
 </details>
 
 
-### Memory
-<details>
-
-* Repetition is needed so your metabolic vampires--natural dissipating processes--don't suck the memories away.
-* Research has shown that if you try to glue things into your memory by repeating something twenty times in one evening, for example, it won't stick nearly as well as if you practice it the same number of times over several days.
-* Long term memory is like a storage warehouse.
-* When you encounter something new, you often use your working memory to handle it. If you want to move that information into your long term memory, it often takes time and practice.
-* Working memory is the part of memory that has to do with what you are immediately and consciously processing in your mind.
-</details>
-
-
 ### Practice
 <details>
 
@@ -167,6 +156,34 @@ A helpful way to make sure you’re learning, and not fooling yourself with illu
 Recalling material when you are outside your usual place of study can also help you strengthen your grasp of the material.  When you are learning something new, you often take in subliminal cues from room and space around you at the time you were originally learning the material.  This can actually throw you off when you take tests, because you often take tests in a room different from the room you were learning in. By recalling and thinking about the material while you are in various physical environments, you become independent of cues from any one location. That helps you avoid the problem of the test room being different from where you originally learned the material.
 </details>
 
+### Testing
+<details>
+
+* When answering multiple choice questions, cover the answers and try to recall the answer on your own.
+* One way to look in a fresh way at what you have done during a test is to check your answers from back to front.
+
+#### Mini Tests
+* You will learn and retain more in one hour of testing than you would if you spent one hour studying.
+* Tests during study sessions are good for concentrating the mind.
+
+
+#### Test Checklist
+* Did you work with classmates on homework problems?
+* Did you get a reasonable night’s sleep before the test?
+* If there was a review session, did you attend and ask questions about any concepts or ideas that you were unsure of?
+* If you had a study guide, did you carefully go through it before the test and convince yourself you understood all of the material?
+* Did you consult with the instructor/teach assistants when you were having trouble?
+
+
+#### Hard start, Jump to easy
+* The hardest part of this technique for many students is that you must have the self-discipline to pull yourself off of a problem you are stuck on and move to another question.
+* By alternating between different problems you are employing your brain’s diffuse thinking strategy, because when you turn your attention AWAY from a problem, you are allowing other, more diffuse, resting state neural networks a chance to work on that problem.
+
+#### Pre-Test Stress and How to Overcome It
+* One easy way to overcome the effects of stress and cortisol is to tell yourself that you are not afraid of failing the test but instead, that you are **EXCITED**  to take the test and get a good grade.
+* When stressed your body produces cortisol which can give you sweaty palms and a racing heart.
+</details>
+
 
 ### Overlearning
 <details>
@@ -237,12 +254,27 @@ Learning takes place in two ways. There's a bottom up chunking process, where pr
 ### Thinking and Learning
 <details>
 
+* It is perfectly normal to start with a few negative feelings about beginning a learning session—even when it’s a subject you ordinarily like. It’s how you handle those feelings that matters.
+* Don't just blindly follow your passions--also work to broaden your passions by keeping yourself open to learning new things, even if you feel you don't have a talent for them.
+* We ordinarily think of learning as something we do when we sit down to study a book.  But actually, being able to learn more easily and deeply involves many important facets--including not only periods of focused concentration, but also periods of relaxation, and even times when the body is simply out getting exercise, or even when it's sleeping. Your brain can be busy figuring things out during times when you have absolutely no conscious awareness of it.
 * Once you’ve got the basic idea down during a session, continuing to hammer away at it during the same session doesn’t strengthen the kinds of long-term memory connections you want to have strengthened. Worse yet, focusing on one technique is a little like learning carpentry by only practicing with a hammer. After a while, you think you can fix anything by just bashing it.
 * Interleaving your studies—making a point to review for a test, for example, by skipping around through problems in the different chapters and materials—can sometimes seem to make your learning more difficult. But in reality, it helps you learn more deeply.
 * One significant mistake students sometimes make in learning is jumping into the water before they learn to swim. In other words, they blindly start working on homework without reading the textbook, attending lectures, viewing online lessons, or speaking with someone knowledgeable. It’s like randomly allowing a thought to pop off in the focused-mode pinball machine without paying any real attention to where the solution truly lies. 
 * Although practice and repetition are important in helping build solid neural patterns to draw on, it’s interleaving that starts building flexibility and creativity.  It’s where you leave the world of practice and repetition and begin thinking more independently.
 * To figure out new ideas and solve problems, it’s often important not only to **focus**  initially, but also to subsequently turn our focus away from what we want to learn, so that we can use other, more **diffuse** ways to process the new information.
 * Our brain uses two very different processes for thinking—the **focused** and **diffuse** modes. You generally toggle back and forth between these modes, using one or the other.
+* When learning something for the first time, try to make the concept or idea into something memorable like associating it with an object or a funny picture in your mind.  An example in the videos involved learning the equation f = ma by associating the equation with a flying mule.
+  * Making vivid pictures is an outstanding method for helping you to more easily recall the material.
+* Take breaks during your study time to let your mind rest and to reward yourself for your good study habits.
+  * Taking breaks between periods of intense focusing helps rewire your brain so that you anticipate the pleasure of the break--which also helps you enjoy your periods of focused attention more.
+</details>
+
+
+### Tasks
+<details>
+
+* Making a task list makes your tasks easier to remember, WITHOUT having to use much of your valuable working memory.
+* It is better to make a task list before you go to sleep, so your subconscious, "diffuse" thinking processes can have a chance to help assist you in actually accomplishing the tasks the next day.
 </details>
 
 
@@ -261,31 +293,59 @@ Einstellung is when your initial thought, an idea you already have in mind, or a
 * Serotonin affects social life and risk-taking behavior
 </details>
 
-
-### Which methods can help when trying to learn something new?
+### New neurons are born in your hippocampus every day. These neurons can survive and help you remember things if you:
 <details>
 
-* Analogy
-* Metaphor
+* Explore a little bit by trying a new route to get to work.
+* Exercise
+* Learn a new skill, like how to fix the plumbing in your sink.
+
+Two experiences that help your neurons to grow and survive are exercise and exposure to new environments or ideas. Travel via a new route is definitely exposure to a new environment!
+</details>
+
+
+### Imposter Syndrome
+<details>
+
+* Imposter syndrome involves frequent feelings of inadequacy.
+* Getting a good grade on a test but being convinced that it was luck and that you are sure to fail the next test and be exposed as a fraud, is a good example of the imposter syndrome.
+</details>
+
+
+### Perseverance
+<details>
+
+* Santiago Ramon y Cajal felt that the key to his success was his ____________, which he called "**the virtue of the less brilliant**."
+</details>
+
+
+### Teamwork
+<details>
+
+* The best study sessions with others start on time, stay on task and contain a bare minimum of small talk in order to focus on the purpose for the gathering.  The time for play is after the work is done.
+* Sometimes you can blindly believe you’ve got everything nailed down intellectually, but you haven’t. This is one reason it is sometimes good to study with others.
+</details>
+
+
+
+
+### Metaphor and Analogy
+<details>
+
+* One of the best things you can do not only to remember, but to better understand a concept is to create a metaphor or analogy for it, often the more visual, the better.
+* Metaphors and analogies, as well as stories, can sometimes be useful for getting people out of Einstellung—being blocked by thinking about a problem in the wrong way
+* It’s often helpful to pretend YOU are the concept you are trying to understand.
 </details>
 
 
 ### What are the four parts of habits?
 <details>
 
-1. The belief
-2. The reward
-3. The routine
-4. The cue
-</details>
-
-### Learning and Procrastination
-<details>
-
-* It is perfectly normal to start with a few negative feelings about beginning a learning session—even when it’s a subject you ordinarily like. It’s how you handle those feelings that matters.
-* To prevent procrastination, you want to avoid concentrating on product. Instead, your attention should be on building processes.  Processes relate to simple habits—habits that coincidentally allow you to do the unpleasant tasks that need to be done.
-* Don't just blindly follow your passions--also work to broaden your passions by keeping yourself open to learning new things, even if you feel you don't have a talent for them.
-* We ordinarily think of learning as something we do when we sit down to study a book.  But actually, being able to learn more easily and deeply involves many important facets--including not only periods of focused concentration, but also periods of relaxation, and even times when the body is simply out getting exercise, or even when it's sleeping. Your brain can be busy figuring things out during times when you have absolutely no conscious awareness of it.
+#### The belief
+#### The reward
+#### The routine
+#### The cue
+  * Location, time, how you feel, reaction (either to other people or to something that just happened)
 </details>
 
 
@@ -308,9 +368,12 @@ Einstellung is when your initial thought, an idea you already have in mind, or a
 ### Procrastination
 <details>
 
+* To prevent procrastination, you want to avoid concentrating on product. Instead, your attention should be on building processes.  Processes relate to simple habits—habits that coincidentally allow you to do the unpleasant tasks that need to be done.
 * Procrastination shares characteristics with addiction.
 * General habits of procrastination can negatively impact many aspects of your life.
 * Procrastination often involves shifting your focus away from something you find uncomfortable.
+* One of the easiest ways to focus on **process** is to focus on doing a **Pomodoro**—a twenty-five-minute timed work session.  (Do NOT focus on completing a task.)
+* It is best to try to focus on **process**, not **product**, because the product is often what triggers the pain that causes you to procrastinate.
 </details>
 
 
@@ -351,6 +414,15 @@ It refers to the relaxed state your mind enters when you are performing common a
 * To begin tapping into your visual memory system, try making a very memorable visual image representing one key item you want to remember.
 * We have outstanding visual and spatial memory systems that help form part of our long term memory.
 * Repetition is important; even when you make something memorable, repetition helps get that memorable item firmly lodged in long term memory.  Remember to repeat—not a bunch of times in one day, but sporadically over several days.
+* Repetition is needed so your metabolic vampires--natural dissipating processes--don't suck the memories away.
+* Research has shown that if you try to glue things into your memory by repeating something twenty times in one evening, for example, it won't stick nearly as well as if you practice it the same number of times over several days.
+* Long term memory is like a storage warehouse.
+* When you encounter something new, you often use your working memory to handle it. If you want to move that information into your long term memory, it often takes time and practice.
+* Working memory is the part of memory that has to do with what you are immediately and consciously processing in your mind.
+
+#### Memory Palace
+* Using these memory techniques allows you to more deeply internalize the information you are using, allowing you to use it much more effectively than if you were to simply try to memorize it by repeating it many times.
+* Memory palaces are useful when you need to relate unrelated items in your mind, such as a grocery list.
 </details>
 
 
