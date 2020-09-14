@@ -826,6 +826,122 @@ private int select(int[] nums, int k, int left, int right) {
 </details>
 
 
+
+### Graphs
+<details>
+
+* Graphs have vertices (nodes) denoted by `V`, and
+* Edges (`E`) which are pairs of vertices
+  * Edges could be directed (ordered pair) or undirected (unordered pair)
+
+
+Let `n` be the number of vertices and `m` be the number of edges of some graph `G`.
+
+#### Sparse vs. Dense Graph
+In most (but not all) applications, `m = Ω(n)` and `m = O(n^2)`
+* That is the number of edges in most graphs `G` is between `n - 1 <= m <= n(n - 1)/2`.
+
+A very sloppy definition:
+  * In a **sparse** graph, `m` is `O(n)` or closer to it
+  * In a **dense** graph, `m` is closer to `O(n^2)`
+
+
+#### The Adjacency Matrix
+A graph `G` represented by an `n⨉n` matrix of zeros and ones, where `A[i][j] = 1` if and only if `G` has an edge (`i -> j`) from node `i` to node `j`.
+* Space complexity: `O(n^2)`
+
+
+#### The Adjacency List
+* Another graph representation
+* Array (or list) of nodes
+* Array (or list) of edges
+* Each edge points to its endpoints
+* Each node points to edges incident on it
+* Space complexity: `O(n + m)`
+
+#### Examples
+* Road Networks
+* The Web (Directed graph - where the webpage is the node and the hyperlinks are the edges)
+* Social Networks
+* Perecedence Constraints (i.e., course prerequisites in CS major)
+
+
+![Graph](images/algorithms/graph.jpg)
+</details>
+
+
+### Cuts of Graphs
+<details>
+
+A **cut** of a graph `(V, E)` is a partition of `V` into two non-empty sets `A` and `B`.
+
+The **crossing edges** of a cut `(A, B)` are those with:
+* [undirected] One endpoint in each of `(A, B)`
+* [directed] Tail in `A` and head in `B`
+
+**Question** Roughly how many cuts does a graph with `n` vertices have?
+* `2^n - 2`
+  * There are `2^n` subsets of a set of `n` vertices. We could take one non-empty subset and make that `A` and the remaining vertices could be set `B`. Note, `A` cannot be the set of all vertices because that would make `B` empty. Thus, we get `2^n - 2` cuts!
+
+![Graph Cut](images/algorithms/graph-cut.jpg)
+</details>
+
+
+### The Minimum Cut Problem
+<details>
+
+**Input:** An undirected graph `G = (V, E)`
+
+**Goal:** Compute a cut with the fewest number of crossing edges.
+
+#### A Few Applications
+* Identify network bottlenecks / weaknesses
+* Community detection in social networks
+  * People who are highly connected among themselves, and
+  * Weakly connected to the rest of the graph
+
+![Graph Minimum Cut](images/algorithms/graph-min-cut.png)
+</details>
+
+
+### Random Contraction Algorithm
+<details>
+
+The [contraction algorithm](https://en.wikipedia.org/wiki/Karger%27s_algorithm) is a randomized algorithm to compute a minimum cut of a connected graph.
+
+* The algorithm does **NOT** always produce a minimum cut
+  * Since we choose edges at random, the cut produce may be correct or not
+
+
+```
+while num(vertices) > 2:
+  - pick a remaining edge (u, v) uniformly at random
+  - merge (or "contract") u and v into a single vertex
+  - remove self-loops
+return cut represented by final 2 vertices
+```
+
+![Contraction Algorithm](images/algorithms/contraction-algorithm.png)
+
+
+#### What is the probability of success?
+Suppose we have a graph `G` of `n` nodes and `m` edges and we have a minimum cut `(A, B)`.
+* Note, there could be multiple minimum cuts, but the one we care about is explictly `(A, B)`
+* Let `F` be the set of edges that have one endpoint in `A` and the other endpoint in `B`.
+* Notice, when an edge in `F` is contracted at some point, then the algorithm **WILL NOT** output `(A, B)`.
+* Also notice, when the algorithm only contracts edges in `A` or inside `B` then the algorithm will output `(A, B)`.
+* Thus, the probability of success is `P[output (A, B)] = P[never contract an edge of F] = 1/(n * (n - 1)) >= 1/n^2` [[proof](https://www.coursera.org/lecture/algorithms-divide-conquer/analysis-of-contraction-algorithm-4TLKM)]
+  * This probability is very small!
+  * However, this is **way** better than the next best solution
+  * Running this basic algorithm a large number of times `N` (independent repeated trials) we could return the best result (the smallest cut) with high success
+    * If we do `N = n^2*ln(n)` trials, then the `P[all fail] <= 1/n`, that is the probability of at least one success is `P[atleast one] = 1 - P[all fail] = (n-1)/n`
+
+#### Complexity
+* Time Complexity `Ω(n^2 * m)` lower bound
+  * There are optimizations that could get the complexity down to `O(n^2)`
+</details>
+
+---
 ## Probability
 
 ### Sample Space Ω
