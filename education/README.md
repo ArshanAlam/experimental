@@ -941,6 +941,47 @@ Suppose we have a graph `G` of `n` nodes and `m` edges and we have a minimum cut
   * There are optimizations that could get the complexity down to `O(n^2)`
 </details>
 
+
+### Generic Graph Search
+<details>
+
+#### Goal
+1. Find everything *findable* from a given start node `S`
+2. Don't explore anything twice! (Use a Set)
+3. We should try to get time complexity `O(n + m)` which is linear with respect to the size of the graph.
+    * `n` is the number of nodes
+    * `m` is the number of edges
+
+
+
+#### Generic Algorithm
+* Given Graph `G` and starting node `s`
+* Mark `s` as explored and all other vertices as unexplored
+* while possible:
+    * choose an edge`(u, v)` with `u` explored and `v` unexplored
+    * mark `v` as explored
+
+
+**Note:** At the end of the algorithm, if node `v` was visited during the search then Graph `G` has a path from `s` to `v`!
+
+#### DFS
+* Explore aggressively like a maze, backtrack only when necessary
+* Could compute topological ordering of a directed acyclic graph (DAG)
+* Could compute connected components in directed graphs
+* Has a time complexity `O(n + m)` using a stack
+
+![DFS Graph Search](images/algorithms/dfs.gif)
+
+#### BFS
+* Explore nodes in "layers"
+* Could compute shortest paths
+* Could compute connected components of an undirected graph
+* Has a time complexity `O(n + m)` using a queue
+
+![BFS Graph Search](images/algorithms/bfs.gif)
+</details>
+
+
 ---
 ## Probability
 
