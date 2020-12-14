@@ -17,6 +17,7 @@
 
 ![Figure 6-1](images/figure-6-1.png)
 
+<br/>
 
 
 ### Partitioning of Key-Value Data
@@ -42,6 +43,7 @@
 
 ![Figure 6-2](images/figure-6-2.png)
 
+<br/>
 
 #### Partitioning by Hash of Key
 * Because of this risk of skew and hot spots, many distributed datasources use a hash function to determine the partition for a given key
@@ -56,9 +58,10 @@
   * Keys that were once adjacent (in key-range partitioning) are now scattered across all the partitions, so their sort order is lost
 
 
+
 ![Figure 6-3](images/figure-6-3.png)
 
-
+<br/>
 
 ##### Consistent Hashing
 * A way of evenly distributing load across an internet-wide system of caches such as a content delivery network (CDN).
@@ -92,12 +95,14 @@ i.e., A used car website that lets users search for cars and filter by color and
 * Each listing has a unique ID (call it *document ID*) and we partition the database by the document ID
 * Whenever a **red** car is added to the database, the database partition automatically adds it to the list of document IDs for the index entry `color:red`
 
+<br/>
 
 * In this indexing approach, each partition is completely seperate
 * Each partition mantains its own secondary indexes, covering only the documents in that partition
 * It doesn't care what data is stored in other partitions
 * Whenever you need to write to the database (to add, remove, or update a document) you only need to deal with the partition that contains the document ID that you are writing
 
+<br/>
 
 * Querying from a document-partitioned index is non-trivial
   * There is no reason why all the cars with a particular color (i.e., red) or a particular make would be in the same partition
@@ -106,14 +111,18 @@ i.e., A used car website that lets users search for cars and filter by color and
   * Still widely used: MongoDB, Riak, Cassandra, Elasticsearch
 
 
+
 ![Figure 6-4](images/figure-6-4.png)
 
+<br/>
 
 
 #### Partitioning Secondary Indexes by Term
 * Rather than each partition having its own secondary index (a local index), we can construct a global index that covers data in all partitions
   * We can't just store that index on one node, since it would likely become a bottleneck and default the purpose of partitioning
 * A global index must also be partitioned, but it can be partitioned differently from the primary key index
+
+<br/>
 
 ![Figure 6-5](images/figure-6-5.png)
 
@@ -122,6 +131,8 @@ i.e., A used car website that lets users search for cars and filter by color and
 * The index on the make of the car is partitioned with boundary being between f and h
 
 
+<br/>
+
 * This is called `term-partitioned` because the term we're looking for determines the partition of the index
 * Term partitioning using a hash of the term gives a more even distribution of load
 * Term partitioning by the term itself can be useful for range scans
@@ -129,6 +140,7 @@ i.e., A used car website that lets users search for cars and filter by color and
 * Downside; writes are slower and more complicated, because a write to a single document may now affect multiple partitions of the index (every term in the document might be on a different partition, on a different node)
 * In practice, updates to global secondary indexes are often asynchronus
   * i.e., Amazon DynamoDB states that its global secondary indexes are updated within a fraction of a second in normal circumstances, but may experience longer propagation delays in cases of faults in the infrastructure
+
 
 
 ### Rebalancing Partitions
@@ -156,6 +168,7 @@ Bebalancing: the process of moving load from one node in the cluster to another
 
 ![Figure 6-6](images/figure-6-6.png)
 
+<br/>
 
 ##### Dynamic Partitioning
 * A fixed number of partitions with fixed boundaries would be very inconvenient if you got the boundaries wrong
@@ -190,3 +203,35 @@ After a large partition has been split, one of its two halves can be transferred
 
 
 ### Request Routing
+* After partitioning our dataset across multiple nodes running on multiple machines, how does a client know which node to connect to?
+* This is an instance of a more general problem called *service discovery*
+  * Many companies have written their own in-house service discovery tools (Palantir Skylab)
+
+<br/>
+
+1. Allow clients to contact any node. If that node coincidentaly owns the partition to which the request applies, it can handle the request directly; otherwise, it forwards the request to the appropriate node, receives the reply, and passes the reply along to the client
+2. Send all request from clients to a routing tier first, which determines the node that should handle each request and forwards it accordingly. This routing riwe does not itself handle any requests; it ownly acts as a partition-aware load balancer
+3. Require that clients be aware of the partitioning and the assignment of partitions to nodes. In this case, a client can connect directly to the appropriate node, without any intermediary.
+
+![Figure 6-7](images/figure-6-7.png)
+
+<br/>
+
+* Many distributed systems rely on a seperate coordination service such as ZooKeeper to keep track of this clister metadata
+* Each node registers itself in ZooKeeper, and ZooKeeper maintains the authoritative mapping of partitions to nodes
+* Other actors (such as routing tier, clients, etc. can subscribe to this information in ZooKeeper)
+* Whenever a partition changes ownership, or a node is added or removed, ZooKeeper notifies the routing tier so that it can keep its routing information up to date
+
+
+![Figure 6-8](images/figure-6-8.png)
+
+<br/>
+
+* Cassandra and Riak take a different approach: they use a gossip protocol among the nodes to disseminate any changes in the cluster state
+* Requests can be sent to any node, and that node forwards them to the appropriate node for the requested partition
+* More complexity in the database nodes but avoids the dependency on an external coordination service such as ZooKeeper
+
+<br/>
+
+* Clients still need to find the IP addresses to connect to
+  * These are not fast-changing as the assignment of partitions to nodes, so it is often sufficient to use DNS for this purpose
