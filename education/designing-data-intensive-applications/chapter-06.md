@@ -1,11 +1,10 @@
-# Designing Data-Intensive Applications
 ## Chapter 06 - Partitioning
 
 * Partitioning (also known as sharding) is the breaking up of very large datasets or very high query throughput.
 * Each partition is a small database of its own, although the database may support operations that touch multiple paritions at the same time
 * Main reason for wanting to partition data is scalability
 * Large dataset can be distributed across many disks, and the query load can be distributed across many processors
-* For queries that operate on a single partition, each ndoe can independently execute the queries on its own partition
+* For queries that operate on a single partition, each node can independently execute the queries on its own partition
   * Query throughput can be scaled by adding more nodes
 
 
@@ -32,11 +31,11 @@
 * Let's assume for now that you have a simple key-value data model, in which you always access a record by its primary key.
 * One way of partitioning is to assign a continuous range of keys to each partition
 * If you know the boundaries between the ranges, you can easily determine which partition contains a given key
-* If you also know which partition is assignws to which node, then you can make your request directly to the appropriate node
+* If you also know which partition is assigned to which node, then you can make your request directly to the appropriate node
 * The ranges of the keys are not necessarily evenly spaced (i.e., Volume 1 is from A->B and Volume 12 is from T->Z)
 * In order to distribute the data evenly, the partition boundaries need to adapt to the data
   * Boundaries could be chosen manually by an administrator, or the database can choose them automatically
-* Within each partition, we can keep keys in sorted order (STables and LSM-Trees)
+* Within each partition, we can keep keys in sorted order (SSTables and LSM-Trees)
   * Upside; range scans are easy (i.e., Fetching data that use timestamp as the key)
   * Downside; certain access patterns can lead to hot spots
 
@@ -47,7 +46,7 @@
 
 #### Partitioning by Hash of Key
 * Because of this risk of skew and hot spots, many distributed datasources use a hash function to determine the partition for a given key
-* A good hash function takes skewed data andmakes it uniformly distributed
+* A good hash function takes skewed data and makes it uniformly distributed
   * The hash function need not be cryptographically strong
   * Cassandra and MongoDB use **MD5**
 * Many programming languages have simple hash functions built in (i.e., Java `Object.hashCode()`)
@@ -84,7 +83,7 @@
 
 ### Partitioning and Secondary Indexes
 * A secondary index usually doesn't identify a record uniquely but rather is a way of searching for occurrences of a particular value (i.e., find all cars whose color is red)
-* Secondary indexes are common in relational databases and document databses
+* Secondary indexes are common in relational databases and document databases
 * Secondary indexes are the main reason for Elasticsearch to exist
 * Many key-value stores (i.e., HBase) avoid secondary indexes due to added complexity
 * The problem with secondary indexes is that they don't map neatly to partitions
@@ -119,7 +118,7 @@ i.e., A used car website that lets users search for cars and filter by color and
 
 #### Partitioning Secondary Indexes by Term
 * Rather than each partition having its own secondary index (a local index), we can construct a global index that covers data in all partitions
-  * We can't just store that index on one node, since it would likely become a bottleneck and default the purpose of partitioning
+  * We can't just store that index on one node, since it would likely become a bottleneck and defeat the purpose of partitioning
 * A global index must also be partitioned, but it can be partitioned differently from the primary key index
 
 <br/>
@@ -154,7 +153,7 @@ Bebalancing: the process of moving load from one node in the cluster to another
 #### Strategies for Rebalancing
 
 ##### How not to do it: `hash mod N`
-* If the number of nodes `N` changes, most of the keys will need to be moved from one node to another
+* If the number of nodes `N` changes, most of the keys will need to be moved from one node to another when we add or remove a node
 
 ##### Fixed number of partitions
 * Create many more partitions than there are nodes, and assign several partitions to each node (i.e., 1000 partitions with 100 nodes)
@@ -180,7 +179,7 @@ Bebalancing: the process of moving load from one node in the cluster to another
 After a large partition has been split, one of its two halves can be transferred to another node in order to balance the load
 * The number of partitions adapts to the total data volume
   * If there is only a small amount of data, a small number of partitions is sufficient, so overheads are small, if there is a huge amount of data, the size of each individual partition is limited to a configurable maximum
-* Dynamic partitioning is well suited for key range-partitioned data and hash-partitioned data.
+* Dynamic partitioning is suitable for both key range-partitioned data and hash-partitioned data.
 
 ##### Partitioning proportionally to nodes
 * The number of partitions are proportional to the number of nodes
@@ -209,15 +208,16 @@ After a large partition has been split, one of its two halves can be transferred
 
 <br/>
 
+#### Three main ways
 1. Allow clients to contact any node. If that node coincidentaly owns the partition to which the request applies, it can handle the request directly; otherwise, it forwards the request to the appropriate node, receives the reply, and passes the reply along to the client
-2. Send all request from clients to a routing tier first, which determines the node that should handle each request and forwards it accordingly. This routing riwe does not itself handle any requests; it ownly acts as a partition-aware load balancer
+2. Send all request from clients to a routing tier first, which determines the node that should handle each request and forwards it accordingly. This routing tier does not itself handle any requests; it only acts as a partition-aware load balancer
 3. Require that clients be aware of the partitioning and the assignment of partitions to nodes. In this case, a client can connect directly to the appropriate node, without any intermediary.
 
 ![Figure 6-7](images/figure-6-7.png)
 
 <br/>
 
-* Many distributed systems rely on a seperate coordination service such as ZooKeeper to keep track of this clister metadata
+* Many distributed systems rely on a seperate coordination service such as ZooKeeper to keep track of this cluster metadata
 * Each node registers itself in ZooKeeper, and ZooKeeper maintains the authoritative mapping of partitions to nodes
 * Other actors (such as routing tier, clients, etc. can subscribe to this information in ZooKeeper)
 * Whenever a partition changes ownership, or a node is added or removed, ZooKeeper notifies the routing tier so that it can keep its routing information up to date
@@ -233,5 +233,6 @@ After a large partition has been split, one of its two halves can be transferred
 
 <br/>
 
+### IP Addresses
 * Clients still need to find the IP addresses to connect to
   * These are not fast-changing as the assignment of partitions to nodes, so it is often sufficient to use DNS for this purpose
