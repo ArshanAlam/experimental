@@ -79,14 +79,114 @@
 
 
 
-
-
 ### Partitioning and Secondary Indexes
+* A secondary index usually doesn't identify a record uniquely but rather is a way of searching for occurrences of a particular value (i.e., find all cars whose color is red)
+* Secondary indexes are common in relational databases and document databses
+* Secondary indexes are the main reason for Elasticsearch to exist
+* Many key-value stores (i.e., HBase) avoid secondary indexes due to added complexity
+* The problem with secondary indexes is that they don't map neatly to partitions
+
 
 #### Partitioning Secondary Indexes by Document
+i.e., A used car website that lets users search for cars and filter by color and by make.
+* Each listing has a unique ID (call it *document ID*) and we partition the database by the document ID
+* Whenever a **red** car is added to the database, the database partition automatically adds it to the list of document IDs for the index entry `color:red`
+
+
+* In this indexing approach, each partition is completely seperate
+* Each partition mantains its own secondary indexes, covering only the documents in that partition
+* It doesn't care what data is stored in other partitions
+* Whenever you need to write to the database (to add, remove, or update a document) you only need to deal with the partition that contains the document ID that you are writing
+
+
+* Querying from a document-partitioned index is non-trivial
+  * There is no reason why all the cars with a particular color (i.e., red) or a particular make would be in the same partition
+* You need to send the query to all partitions, and combine all the results you get back (somtimes known as *scatter/gather*)
+* Read queries on document-partitioned secondary indexes are quite expensive
+  * Still widely used: MongoDB, Riak, Cassandra, Elasticsearch
+
+
+![Figure 6-4](images/figure-6-4.png)
+
+
 
 #### Partitioning Secondary Indexes by Term
+* Rather than each partition having its own secondary index (a local index), we can construct a global index that covers data in all partitions
+  * We can't just store that index on one node, since it would likely become a bottleneck and default the purpose of partitioning
+* A global index must also be partitioned, but it can be partitioned differently from the primary key index
+
+![Figure 6-5](images/figure-6-5.png)
+
+* In Figure 6-5, *red cars* from all partitions appear under `color:red` in the index
+* Index is partitioned so that colors starting with the letters a to r appear in partition 0 and colors starting with s to z appear in partition 1
+* The index on the make of the car is partitioned with boundary being between f and h
+
+
+* This is called `term-partitioned` because the term we're looking for determines the partition of the index
+* Term partitioning using a hash of the term gives a more even distribution of load
+* Term partitioning by the term itself can be useful for range scans
+* Upside; reads are more efficient on a global (term-partitioned) index over a document-partitioned index
+* Downside; writes are slower and more complicated, because a write to a single document may now affect multiple partitions of the index (every term in the document might be on a different partition, on a different node)
+* In practice, updates to global secondary indexes are often asynchronus
+  * i.e., Amazon DynamoDB states that its global secondary indexes are updated within a fraction of a second in normal circumstances, but may experience longer propagation delays in cases of faults in the infrastructure
+
 
 ### Rebalancing Partitions
+Bebalancing: the process of moving load from one node in the cluster to another
+
+* After rebalancing, the load (data storage, read and write requests) should be shared fairly between the nodes in the cluster
+* While rebalancing is happening, the database should continue accepting reads and writes
+* No more data than necessary should be moved between nodes, to make rebalancing fast and to minimize the network and disk I/O load
+
 
 #### Strategies for Rebalancing
+
+##### How not to do it: `hash mod N`
+* If the number of nodes `N` changes, most of the keys will need to be moved from one node to another
+
+##### Fixed number of partitions
+* Create many more partitions than there are nodes, and assign several partitions to each node (i.e., 1000 partitions with 100 nodes)
+* If a node is added to the cluster, the new node can steal a few partitions from every existing node until partitions are faily distributed once again
+* If a node is removed from the cluster, the same happens in reverse
+* Entire partitions are moved between nodes, the number of partitions does not change, nor does the assignment of keys to partitions
+* It takes some time to transfer a large amount of data over the network, so the old assignment of partitions is used for any read and writes that happen while the transfer is in progress
+* Approach used in Riak, Elasticsearch, Couchbase
+* Each partition also has management overhead, so it's counterproductive to choose too high a number
+
+
+![Figure 6-6](images/figure-6-6.png)
+
+
+##### Dynamic Partitioning
+* A fixed number of partitions with fixed boundaries would be very inconvenient if you got the boundaries wrong
+  * You could end up with all of the data in one partition and all of the other partitions empty
+* HBase and RethinkDB create partitions dynamically
+* When a partition grows to exceed a configured size (i.e., 10 GB), it is split into two partitions so that approximately half of the data ends up on each side of the split
+* If lots of data is deleted and a partition shrinks below some threshold, it can be merged with an adjacent partition
+* Each partition is assigned to one node and a node could have multiple partitions
+After a large partition has been split, one of its two halves can be transferred to another node in order to balance the load
+* The number of partitions adapts to the total data volume
+  * If there is only a small amount of data, a small number of partitions is sufficient, so overheads are small, if there is a huge amount of data, the size of each individual partition is limited to a configurable maximum
+* Dynamic partitioning is well suited for key range-partitioned data and hash-partitioned data.
+
+##### Partitioning proportionally to nodes
+* The number of partitions are proportional to the number of nodes
+  * Used by Cassandra
+* Fixed number of partitions per node (i.e., 256 is the default in Cassandra)
+* Size of each partition grows proportionally to the dataset size while the number of nodes remain unchanged
+* Increasing the number of nodes makes the partitions smaller
+* When a new node joins the cluster, it **randomly** chooses a fixed number of existing partitions to split, and then takes ownership of one half of each of those split partitions while leaving the other half of each partition in place
+  * The randomization can produce unfair split, but when averaged over a large number of partitions, the new node ends up taking a fair share of the load from existing nodes
+* Picking partition boundaries randomly requires that hash-based partitioning is used so the boundaries can be picked from the range of numbers produced by the hash function
+
+
+#### Operations: Automatic or Manual Rebalancing
+* Convenient because there is less operational work to do for normal maintence
+* It can be unpredictable
+  * Rebalancing is an expensive operation, because it requires rerouting requests and moving a large amount of data from one node to another
+  * This process can overload the network or the nodes and harm the performance of other requests while the rebalancing is in progress
+* Automation can be dangerous in combination with automatic failure detection
+* It can be a good thing to have a human in the loop for rebalancing. It's slower than a fully automatic process, but it can help prevent operational surprises
+
+
+### Request Routing
