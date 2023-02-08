@@ -30,7 +30,9 @@ public class Base64 {
 
     for (byte cur : data) {
       int remainderSize = 8 - readSize;
-      int read = cur >> remainderSize;
+      // In Java we cannot bitshift a byte, so it'll get converted into an int/long
+      // Thus we have the 0xFF bitmask to ensure that `read` does not overflow.
+      int read = ((cur & 0xFF) >>> remainderSize);
       int idx = remainder | read;
 
       result.append(CHAR_MAP[idx]);
@@ -69,36 +71,45 @@ public class Base64 {
   public static byte[] decode(String data) {
     List<Byte> result = new ArrayList<>();
 
-    int remainderSize = 8;
+    boolean isPadding = false;
+    int remainder = 8;
     int curByte = 0;
 
+    // 000000:00|0000:0000|00:000000|000000:00|
     for (char c : data.toCharArray()) {
       if (c == PADDING) {
+        // When we encounter padding, then curByte is just zeros that must be ignored!
+        // Example: Base64 encoded string: TWE=
+        // Example: 010011:010110:000100:------
+        // ...........................^^ This is what is in current byte and these zeros are not
+        // part of the original data
+        isPadding = true;
         break;
       }
 
       int idx = INDEX_MAP.get(c);
 
-      if (remainderSize == 8) {
-        curByte = idx;
-        remainderSize -= 6;
-        continue;
+      if (remainder == 8) {
+        curByte = idx << 2;
+        remainder = 2;
+      } else {
+        int cutSize = 6 - remainder;
+        curByte = curByte | (idx >>> cutSize);
+        result.add((byte) (curByte & 0xFF));
+
+        curByte = idx & ((1 << cutSize) - 1);
+        curByte = curByte << (8 - cutSize);
+        remainder = 8 - cutSize;
       }
 
-      curByte = curByte << remainderSize;
-      curByte = curByte | (idx >>> (6 - remainderSize));
-
-      result.add((byte) (curByte & 0xFF));
-
-      int nextReadSize = 6 - remainderSize;
-      curByte = idx & ((1 << nextReadSize) - 1);
-      remainderSize = 8 - nextReadSize;
-
+      if (remainder == 0) {
+        remainder = 8;
+        curByte = 0;
+      }
     }
 
-    System.err.println("Remainder Size Decode " + remainderSize + " " + curByte);
-    if (remainderSize > 0 && remainderSize < 8) {
-      result.add((byte) ((curByte << remainderSize) & 0xFF));
+    if ((!isPadding) & (remainder > 0 && remainder < 8)) {
+      result.add((byte) (curByte & 0xFF));
     }
 
     byte[] resultArray = new byte[result.size()];
