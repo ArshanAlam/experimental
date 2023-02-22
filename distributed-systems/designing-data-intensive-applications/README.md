@@ -4,7 +4,7 @@ by Martin Kleppmann
 
 ## Preface
 
-* Internet companies are handling huge volumes of data and traffic, forcing them to create new tools that enable them efficiently handle such scale
+* Internet companies are handling huge volumes of data and traffic, forcing them to create new tools that enable them to efficiently handle such scale
 * An application is *data-intensive* if the quantity of data, the complexity of data, or the speed at which it is changing is the primary challenge
 * After reading this book, you will be in a great position to decided which kind of technology is appropriate for which purpose, and understand how tools can be combined to form the foundation of a good application architecture
 * [https://github.com/ept/ddia-references](https://github.com/ept/ddia-references) contains all up-to-date links mentioned in this book
@@ -37,5 +37,5 @@ Many applications today are *data-intensive*, as opposed to *compute-intensive*.
   * How do you ensure that the data remains correct and complete, even when things go wrong internally?
   * How do you provide consistently good performance to clients, even when parts of your system are degraded?
   * How do you scale to handle an increase in load?
-  What does a good API for the service look like?
+  * What does a good API for the service look like?
   * And many more tricky questions will arise when you develop your data system
