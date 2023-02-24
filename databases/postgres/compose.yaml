@@ -1,11 +1,13 @@
 services:
   storage:
     image: postgres
+    container_name: postgres
     restart: always
     networks:
       - storage-network
     volumes:
       - ${PWD}/storage-data:/storage-data:rw
+      - ${PWD}/initdb:/docker-entrypoint-initdb.d:ro
     configs:
       - postgres-config
     secrets:
