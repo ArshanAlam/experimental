@@ -13,7 +13,7 @@ by Martin Kleppmann
 
 The first four chapters go through the fundamental ideas that apply to all data systems, whether running on a single machine or distributed across a cluster of machines.
 
-### Chapter 1: Reliable, Scalable, and Maintainable Applications
+## Chapter 1: Reliable, Scalable, and Maintainable Applications
 
 > This chapter focuses on the meaning of *reliability*, *scalability*, *maintainability*, and how we can try to achieve these goals.
 
@@ -25,7 +25,7 @@ Many applications today are *data-intensive*, as opposed to *compute-intensive*.
 * Send a message to anoter process, to be handled asynchronously (*stream processing*)
 * Periodically crunch a large amount of accumulated data (*batch processing*)
 
-#### Thinking About Data Systems
+### Thinking About Data Systems
 
 ![Figure 1-1. One possible architecture for a data system that combines several components](images/ddia_figure_1-1.png)
 
@@ -39,3 +39,32 @@ Many applications today are *data-intensive*, as opposed to *compute-intensive*.
   * How do you scale to handle an increase in load?
   * What does a good API for the service look like?
   * And many more tricky questions will arise when you develop your data system
+
+### Reliability
+
+> The system should continue to work correctly (performing the correct function at the desired level of performance) even in the face of *adversity* (hardware or software faults, and even human error).
+
+* The things that can go wrong are called *faults*
+* Systems that anticipate faults and can cope with them are called *fault-tolerant* or *resilient*
+* Being resilient to every fault is not practical, thus it makes sense to talk about tolerating *certain types* of faults
+* Fault ≠ Failure
+* A fault is a component of a system deviating from its spec
+* A failure is when the system as a whole stops providing the required service to the user
+* It is best to design fault-tolerance mechanisms that prevent faults from causing failures
+* Using [chaos engineering](https://en.wikipedia.org/wiki/Chaos_engineering) can increase your confidence that faults will be handled correctly when they occur naturally
+
+#### Hardware Faults
+
+* Hardware faults (disk failure, losing power, unplugged network cable) happen all the time
+* Hard disks have a mean time to failure (MTTF) of abou 10 to 50 years
+* Adding redundant components cannout completely prevent hardware problems from causing failures, however they often keep a machine running uninterrupted for years
+  * Disk in a RAID configuration
+  * Servers with dual power supplies
+  * diesel generators for backup power
+* As long as you can restore a backup onto a new machine fairly quickly, the downtime in a case of a failure is not catastrophic in most applications
+* As data volumes and applications' computing demands have increased, more applications have behan using larger numbers of machines
+  * This proportionally increases the rate of hardware faults
+  * In cloud platforms (AWS, Azure, Google Cloud) it is common for virtual machine instances to become unabilable without warning
+    * These platforms are designed to prioritize flexibility and elasticity over single-machine reliability
+* Hence a move towards systems that can tolerate the loss of entire machines, by using software fault-tolerance techniques in addition to hardware redundancy
+  * These systems can be patched one node at a time, without downtime of the entire system ([rolling upgrade](https://en.wikipedia.org/wiki/Rolling_release)).
