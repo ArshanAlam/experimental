@@ -68,3 +68,41 @@ Many applications today are *data-intensive*, as opposed to *compute-intensive*.
     * These platforms are designed to prioritize flexibility and elasticity over single-machine reliability
 * Hence a move towards systems that can tolerate the loss of entire machines, by using software fault-tolerance techniques in addition to hardware redundancy
   * These systems can be patched one node at a time, without downtime of the entire system ([rolling upgrade](https://en.wikipedia.org/wiki/Rolling_release)).
+
+#### Software Errors
+
+* Systematic errors in software is another class of fault and they tend to cause many more system failures than uncorrelated hardware faults
+  * For example, a bug in the Linux caused many applications to hang simultaneously on June 30, 2012 due to a leap second ([Hacker News thread](https://news.ycombinator.com/item?id=4182642))
+* These types of bugs lie dormant for a long time until an assumption (which is usually true) eventually stops being true for some reason
+* There is no quick solution for systematic faults in software however the following could help:
+  * Carefully thinking about assumptions and interactions in the system
+  * Thorough testing
+  * Process isolation
+  * Allowing processes to crash and restart
+  * Measuring, monitoring, and analyzing system behavior in production
+  * A system that constantly checks itself while it is running and raises an alert if a discrepancy is found
+
+#### Human Errors
+
+* Humans are known to be unreliable
+  * Configuration errors by operators are the leading cause of outages
+  * Whereas hardware faults only resulted in 10-25% of outages
+* We must design systems in a way that minimizes opportunities for error
+  * Make it easy to do "the right thing" and discourage "the wrong thing"
+* Provide fully featured non-production *sandbox* environments where people can explore and experiment safely, using real data, without affecting real users
+* Test thoroughly at all levels, from unit tests to whole-system integration tests and manual tests
+* Allow quick and easy recovery from human errors, to minimize the impact in the case of a failure
+  * Make it fast to roll back configuration changes
+  * Roll out new code gradually
+* Set up detailed and clear monitoring, such as performance metrics and error rates
+  * Monitoring can show us early warning signals and allow us to check whether any assumptions or constraint are being violated
+
+#### How Important is Reliability?
+
+* Even in "noncritical" applications we have a responsibility to our users
+  * Bugs in business applications cause lost productivity (and legal risks if figures are reported incorrectly)
+  * Outages of ecommerce sites can have huge costs in terms of lost revenue and damage to reputation
+* There are situations in which we may choose to sacrifice reliability in order to reduce development cost or operational cost
+  * e.g. when developing a prototype product for an unproven market
+  * e.g. for a service with a very narrow profit margin
+* But we should be very conscious of when we are cutting corners
