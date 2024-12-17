@@ -1,3 +1,14 @@
-# Postgres in Production
+# Postgres Experiments
 
-The purpose of this mini-project is to setup a Postgres so template that could be used in production with minor changes.
+
+Run the following in this directory to start the postgres Docker container.
+
+```shell
+docker-compose up
+```
+
+To use `psql` execute:
+
+```shell
+docker exec -it postgres psql
+```
