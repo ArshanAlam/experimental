@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres
+    container_name: postgres
+    restart: always
+    volumes:
+      - type: tmpfs
+        target: /dev/shm
+        tmpfs:
+          size: 134217728 # 128MB = 134217728 bytes = 128 * 2^20
+    environment:
+      PGUSER: postgres
+      POSTGRES_PASSWORD: postgres
