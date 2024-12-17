@@ -1,4 +1,4 @@
-# Sandbox
+# Experimental
 This is a [monorepo](https://en.wikipedia.org/wiki/Monorepo) of mini-projects, tutorials, algorithms, data structures, system design, and anything else that I've worked on. Traditionally I would create individual repos for these, however it became too painful to maintain. Thus, I added all those little repos into a single large repo.
 
 ## Topics Covered
